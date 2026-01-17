@@ -162,3 +162,10 @@ cython_debug/
 # Folders
 cache
 wandb
+
+# local secrets
+configs/services/huggingface.yaml
+configs/services/wandb.yaml
+configs/services/openai.yaml
+viewer/.env
+.env
