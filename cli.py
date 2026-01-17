@@ -270,7 +270,7 @@ def execute(index):
         "w",
     ) as f:
         f.write("#!/bin/bash\n")
-        f.write("source ./venv/bin/activate\n")
+        f.write("# source ./venv/bin/activate\n") #注释掉原来的要求激活环境
         for command in commands:
             f.write(command + "\n")
     subprocess.run(

@@ -114,7 +114,7 @@ class TrainingArguments(transformers.TrainingArguments):
     )
     save_strategy: str = field(default="epoch", metadata={"help": "save strategy"})
     load_best_model_at_end: bool = field(
-        default=True, metadata={"help": "load best model at end"}
+        default=False, metadata={"help": "load best model at end"} # 曾经是True
     )
     metric_for_best_model: str = field(
         default="loss", metadata={"help": "metric for best model"}
@@ -198,7 +198,7 @@ def load_and_config_model(script_args, training_args):
         # Update transformers package to >=4.38.0 and no need to use trust_remote_code
         trust_remote_code=True,
         # Use flash attention if specified
-        attn_implementation="flash_attention_2" if script_args.use_flash_attn else None,
+        attn_implementation="eager",#attn_implementation="flash_attention_2" if script_args.use_flash_attn else None,
         use_cache=False if training_args.gradient_checkpointing else True,
         cache_dir=script_args.model_cache_dir,
     )

@@ -26,9 +26,15 @@ tiktoken>=0.6.0
 openai>=1.23.3
 deepspeed>=0.14.2
 accelerate>=0.29.3
-huggingface-hub<=0.22.2
+# huggingface-hub<=0.22.2
+huggingface-hub>=0.22.2
 datasets>=2.19.0
 peft>=0.10.0
-transformers>=4.40.1
-trl>=0.8.6
+# transformers>=4.40.1
+# trl==0.8.6
+
+transformers==4.40.1
+trl==0.8.6
 sentencepiece>=0.2.0
+
+

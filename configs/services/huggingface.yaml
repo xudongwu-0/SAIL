@@ -1,12 +1,12 @@
-organization:
-token:
+organization: xudongwu
+token: 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
 
 prefix:
-  datasets:
-  models:
-  evaluations:
+  datasets: xudongwu/
+  models:  xudongwu/
+  evaluations:  xudongwu/
 
 collections:
-  datasets:
-  models:
-  evaluations:
+  datasets: xudongwu/sail
+  models: xudongwu/sail
+  evaluations: xudongwu/sail

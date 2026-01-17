@@ -1,7 +1,22 @@
+# gpt-4-turbo:
+# - azure_endpoint:
+#   api_key:
+#   api_version:
+#   model_name:
+#   RPM:
+#   TPM:
+
+# openai:
+#   api_key: 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
+#   model_name: gpt-4-turbo     
+#   RPM: 60
+#   TPM: 200000
+
 gpt-4-turbo:
-- azure_endpoint:
-  api_key:
-  api_version:
-  model_name:
-  RPM:
-  TPM:
+  # - azure_endpoint: https://api.openai.com/v1/chat/completions
+  - azure_endpoint: https://sg.uiuiapi.com
+    api_key: sk-pKkTk7lrDk8BBAbPUT4GpuxLgS7tAGxKhV2tijzbpsSBgtIF
+    api_version: "2024-02-15-preview"
+    model_name: gpt-4-turbo
+    RPM: 60
+    TPM: 200000

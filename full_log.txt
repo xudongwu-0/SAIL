@@ -1,0 +1,1937 @@
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.6105477809906006,
+'logps/rejected': -352.3056640625, 'logps/chosen': -447.06585693359375, 'logits
+/rejected': -1.0437681674957275, 'logits/chosen': -0.97282874584198, 'epoch': 3
+.83}
+{'loss': 0.407, 'grad_norm': 8.1875, 'learning_rate': 2.3717623158963943e-06, '
+rewards/chosen': -2.276050090789795, 'rewards/rejected': -3.947967052459717, 'r
+ewards/accuracies': 0.75, 'rewards/margins': 1.6719169616699219, 'logps/rejecte
+d': -417.0375061035156, 'logps/chosen': -460.95672607421875, 'logits/rejected':
+ -0.9765984416007996, 'logits/chosen': -1.1326191425323486, 'epoch': 3.83}
+{'loss': 0.2194, 'grad_norm': 0.63671875, 'learning_rate': 2.361604875571356e-0
+6, 'rewards/chosen': -1.6189794540405273, 'rewards/rejected': -4.30349349975585
+9, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.68451380729675
+3, 'logps/rejected': -323.95257568359375, 'logps/chosen': -532.7611083984375, '
+logits/rejected': -0.9911320805549622, 'logits/chosen': -0.983842670917511, 'ep
+och': 3.84}
+{'loss': 0.2582, 'grad_norm': 8.0, 'learning_rate': 2.3514474352463183e-06, 're
+wards/chosen': -1.9253711700439453, 'rewards/rejected': -4.077176570892334, 're
+wards/accuracies': 0.8999999761581421, 'rewards/margins': 2.151805877685547, 'l
+ogps/rejected': -385.93621826171875, 'logps/chosen': -427.09002685546875, 'logi
+ts/rejected': -0.9860479235649109, 'logits/chosen': -1.074798583984375, 'epoch'
+: 3.84}
+{'loss': 0.3699, 'grad_norm': 5.5625, 'learning_rate': 2.34128999492128e-06, 'r
+ewards/chosen': -1.9890693426132202, 'rewards/rejected': -4.522805213928223, 'r
+ewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.533736228942871, '
+logps/rejected': -427.6747131347656, 'logps/chosen': -485.25677490234375, 'logi
+ts/rejected': -1.0245552062988281, 'logits/chosen': -1.0090789794921875, 'epoch
+': 3.85}
+{'loss': 0.3336, 'grad_norm': 6.5625, 'learning_rate': 2.331132554596242e-06, '
+rewards/chosen': -2.3321423530578613, 'rewards/rejected': -4.285232067108154, '
+rewards/accuracies': 0.875, 'rewards/margins': 1.9530894756317139, 'logps/rejec
+ted': -383.19940185546875, 'logps/chosen': -472.47381591796875, 'logits/rejecte
+d': -1.0744034051895142, 'logits/chosen': -1.119474172592163, 'epoch': 3.85}
+{'loss': 0.2602, 'grad_norm': 3.859375, 'learning_rate': 2.320975114271204e-06,
+ 'rewards/chosen': -1.936414122581482, 'rewards/rejected': -4.397997856140137,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.4615843296051025,
+ 'logps/rejected': -365.8709411621094, 'logps/chosen': -492.53106689453125, 'lo
+gits/rejected': -1.001252293586731, 'logits/chosen': -1.0929386615753174, 'epoc
+h': 3.86}
+{'loss': 0.1868, 'grad_norm': 0.8203125, 'learning_rate': 2.310817673946166e-06
+, 'rewards/chosen': -1.6803268194198608, 'rewards/rejected': -4.627048492431641
+, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.946721553802490
+2, 'logps/rejected': -385.3675842285156, 'logps/chosen': -482.9818420410156, 'l
+ogits/rejected': -1.0107576847076416, 'logits/chosen': -1.0495685338974, 'epoch
+': 3.86}
+{'loss': 0.2317, 'grad_norm': 4.375, 'learning_rate': 2.3006602336211275e-06, '
+rewards/chosen': -1.3068349361419678, 'rewards/rejected': -4.145247936248779, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.8384130001068115, 'logps/rejec
+ted': -410.4810485839844, 'logps/chosen': -459.83941650390625, 'logits/rejected
+': -1.2054680585861206, 'logits/chosen': -1.0499005317687988, 'epoch': 3.87}
+{'loss': 0.1856, 'grad_norm': 3.765625, 'learning_rate': 2.2905027932960895e-06
+, 'rewards/chosen': -2.2061097621917725, 'rewards/rejected': -4.740726470947266
+, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.534616947174072
+3, 'logps/rejected': -308.56072998046875, 'logps/chosen': -394.4354553222656, '
+logits/rejected': -0.925177276134491, 'logits/chosen': -1.09418785572052, 'epoc
+h': 3.87}
+{'loss': 0.2722, 'grad_norm': 5.53125, 'learning_rate': 2.2803453529710515e-06,
+ 'rewards/chosen': -1.8135287761688232, 'rewards/rejected': -4.4081525802612305
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.5946240425109863, 'logps/re
+jected': -340.09527587890625, 'logps/chosen': -423.99127197265625, 'logits/reje
+cted': -1.0425649881362915, 'logits/chosen': -1.1137356758117676, 'epoch': 3.88
+}
+{'loss': 0.3441, 'grad_norm': 3.625, 'learning_rate': 2.2701879126460135e-06, '
+rewards/chosen': -1.896286964416504, 'rewards/rejected': -4.566985130310059, 'r
+ewards/accuracies': 0.824999988079071, 'rewards/margins': 2.6706976890563965, '
+logps/rejected': -374.90814208984375, 'logps/chosen': -408.26104736328125, 'log
+its/rejected': -1.0978572368621826, 'logits/chosen': -1.089597463607788, 'epoch
+': 3.88}
+{'loss': 0.2603, 'grad_norm': 4.875, 'learning_rate': 2.2600304723209755e-06, '
+rewards/chosen': -1.7711766958236694, 'rewards/rejected': -4.257734775543213, '
+rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.486557722091675, '
+logps/rejected': -412.65655517578125, 'logps/chosen': -471.8392028808594, 'logi
+ts/rejected': -1.1130040884017944, 'logits/chosen': -1.117765188217163, 'epoch'
+: 3.89}
+{'loss': 0.4502, 'grad_norm': 5.15625, 'learning_rate': 2.249873031995937e-06,
+'rewards/chosen': -1.5582407712936401, 'rewards/rejected': -3.57114839553833, '
+rewards/accuracies': 0.75, 'rewards/margins': 2.0129075050354004, 'logps/reject
+ed': -292.755615234375, 'logps/chosen': -480.807861328125, 'logits/rejected': -
+1.1182060241699219, 'logits/chosen': -1.2477781772613525, 'epoch': 3.89}
+{'loss': 0.199, 'grad_norm': 2.796875, 'learning_rate': 2.239715591670899e-06,
+'rewards/chosen': -1.697253942489624, 'rewards/rejected': -4.5643229484558105,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.8670692443847656,
+ 'logps/rejected': -437.56744384765625, 'logps/chosen': -469.41265869140625, 'l
+ogits/rejected': -0.994133472442627, 'logits/chosen': -1.0396958589553833, 'epo
+ch': 3.9}
+{'loss': 0.2182, 'grad_norm': 4.21875, 'learning_rate': 2.229558151345861e-06,
+'rewards/chosen': -1.6994575262069702, 'rewards/rejected': -4.291400909423828,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.5919432640075684,
+ 'logps/rejected': -400.1258544921875, 'logps/chosen': -532.3677978515625, 'log
+its/rejected': -1.0540411472320557, 'logits/chosen': -1.0939223766326904, 'epoc
+h': 3.9}
+{'loss': 0.4603, 'grad_norm': 11.625, 'learning_rate': 2.219400711020823e-06, '
+rewards/chosen': -2.0336010456085205, 'rewards/rejected': -4.421111583709717, '
+rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.3875105381011963,
+'logps/rejected': -348.03643798828125, 'logps/chosen': -470.3470153808594, 'log
+its/rejected': -1.0230567455291748, 'logits/chosen': -1.0421959161758423, 'epoc
+h': 3.91}
+{'loss': 0.2519, 'grad_norm': 1.953125, 'learning_rate': 2.2092432706957846e-06
+, 'rewards/chosen': -1.528576135635376, 'rewards/rejected': -4.033688068389893,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.5051116943359375, 'logps/rej
+ected': -464.68267822265625, 'logps/chosen': -601.7339477539062, 'logits/reject
+ed': -1.0994633436203003, 'logits/chosen': -1.1830008029937744, 'epoch': 3.91}
+{'loss': 0.3867, 'grad_norm': 13.8125, 'learning_rate': 2.199085830370747e-06,
+'rewards/chosen': -1.9262769222259521, 'rewards/rejected': -3.924163341522217,
+'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 1.997886061668396,
+ 'logps/rejected': -408.25250244140625, 'logps/chosen': -551.095703125, 'logits
+/rejected': -1.1285293102264404, 'logits/chosen': -1.205018401145935, 'epoch':
+3.92}
+{'loss': 0.3882, 'grad_norm': 7.40625, 'learning_rate': 2.1889283900457086e-06,
+ 'rewards/chosen': -1.9570547342300415, 'rewards/rejected': -4.130699634552002,
+ 'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 2.17364501953125,
+ 'logps/rejected': -366.2568664550781, 'logps/chosen': -432.488037109375, 'logi
+ts/rejected': -0.8766635656356812, 'logits/chosen': -1.030641794204712, 'epoch'
+: 3.92}
+{'loss': 0.2627, 'grad_norm': 0.71875, 'learning_rate': 2.1787709497206706e-06,
+ 'rewards/chosen': -1.9792888164520264, 'rewards/rejected': -4.455976963043213,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.47668719291687, 'logps/rejec
+ted': -393.65826416015625, 'logps/chosen': -491.9434509277344, 'logits/rejected
+': -1.1007887125015259, 'logits/chosen': -1.0736171007156372, 'epoch': 3.93}
+{'loss': 0.2078, 'grad_norm': 1.859375, 'learning_rate': 2.1686135093956326e-06
+, 'rewards/chosen': -1.4869921207427979, 'rewards/rejected': -4.574057579040527
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.08706545829772
+95, 'logps/rejected': -324.2943420410156, 'logps/chosen': -467.6919860839844, '
+logits/rejected': -1.1225590705871582, 'logits/chosen': -1.1482511758804321, 'e
+poch': 3.93}
+{'loss': 0.2785, 'grad_norm': 1.8125, 'learning_rate': 2.1584560690705942e-06,
+'rewards/chosen': -1.7185118198394775, 'rewards/rejected': -4.203495502471924,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.484983444213867, 'logps/rejec
+ted': -421.50482177734375, 'logps/chosen': -535.1348266601562, 'logits/rejected
+': -1.017396092414856, 'logits/chosen': -1.1526333093643188, 'epoch': 3.94}
+{'loss': 0.3282, 'grad_norm': 7.1875, 'learning_rate': 2.1482986287455562e-06,
+'rewards/chosen': -1.6269766092300415, 'rewards/rejected': -4.265952110290527,
+'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.6389753818511963
+, 'logps/rejected': -335.10174560546875, 'logps/chosen': -418.2279357910156, 'l
+ogits/rejected': -1.0846675634384155, 'logits/chosen': -1.048738718032837, 'epo
+ch': 3.94}
+{'loss': 0.3095, 'grad_norm': 1.5703125, 'learning_rate': 2.1381411884205182e-0
+6, 'rewards/chosen': -1.8092511892318726, 'rewards/rejected': -3.91362071037292
+5, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.1043696403503
+42, 'logps/rejected': -366.2167053222656, 'logps/chosen': -545.4796142578125, '
+logits/rejected': -1.0316442251205444, 'logits/chosen': -1.0952364206314087, 'e
+poch': 3.95}
+{'loss': 0.3239, 'grad_norm': 5.0, 'learning_rate': 2.1279837480954802e-06, 're
+wards/chosen': -2.1401302814483643, 'rewards/rejected': -4.1628923416137695, 'r
+ewards/accuracies': 0.875, 'rewards/margins': 2.022761821746826, 'logps/rejecte
+d': -317.15032958984375, 'logps/chosen': -410.5601501464844, 'logits/rejected':
+ -1.1151155233383179, 'logits/chosen': -1.111494541168213, 'epoch': 3.95}
+{'loss': 0.2825, 'grad_norm': 1.890625, 'learning_rate': 2.117826307770442e-06,
+ 'rewards/chosen': -1.8854345083236694, 'rewards/rejected': -4.229788303375244,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.344353199005127, 'logps/reje
+cted': -328.28363037109375, 'logps/chosen': -542.1099243164062, 'logits/rejecte
+d': -1.0626201629638672, 'logits/chosen': -1.1913704872131348, 'epoch': 3.96}
+{'loss': 0.323, 'grad_norm': 4.59375, 'learning_rate': 2.1076688674454042e-06,
+'rewards/chosen': -2.3175501823425293, 'rewards/rejected': -4.430316925048828,
+'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.1127665042877197,
+ 'logps/rejected': -372.11932373046875, 'logps/chosen': -391.59002685546875, 'l
+ogits/rejected': -1.1742302179336548, 'logits/chosen': -1.1516287326812744, 'ep
+och': 3.96}
+{'loss': 0.3506, 'grad_norm': 2.875, 'learning_rate': 2.097511427120366e-06, 'r
+ewards/chosen': -1.7875702381134033, 'rewards/rejected': -4.378073692321777, 'r
+ewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.590503454208374, '
+logps/rejected': -403.6187744140625, 'logps/chosen': -601.06884765625, 'logits/
+rejected': -1.0103005170822144, 'logits/chosen': -0.9852179288864136, 'epoch':
+3.97}
+{'loss': 0.3802, 'grad_norm': 9.75, 'learning_rate': 2.087353986795328e-06, 're
+wards/chosen': -1.9203624725341797, 'rewards/rejected': -3.4909770488739014, 'r
+ewards/accuracies': 0.824999988079071, 'rewards/margins': 1.570614218711853, 'l
+ogps/rejected': -351.004150390625, 'logps/chosen': -452.86328125, 'logits/rejec
+ted': -1.1067463159561157, 'logits/chosen': -1.1273033618927002, 'epoch': 3.97}
+{'loss': 0.2496, 'grad_norm': 1.8125, 'learning_rate': 2.07719654647029e-06, 'r
+ewards/chosen': -1.597034215927124, 'rewards/rejected': -4.261670112609863, 're
+wards/accuracies': 0.8999999761581421, 'rewards/margins': 2.6646361351013184, '
+logps/rejected': -464.1416931152344, 'logps/chosen': -497.9381408691406, 'logit
+s/rejected': -1.0721532106399536, 'logits/chosen': -1.1599500179290771, 'epoch'
+: 3.98}
+{'loss': 0.3413, 'grad_norm': 2.0625, 'learning_rate': 2.067039106145252e-06, '
+rewards/chosen': -1.7655836343765259, 'rewards/rejected': -3.9477744102478027,
+'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.1821913719177246
+, 'logps/rejected': -411.13946533203125, 'logps/chosen': -484.93927001953125, '
+logits/rejected': -1.229833960533142, 'logits/chosen': -1.245253086090088, 'epo
+ch': 3.98}
+{'loss': 0.2927, 'grad_norm': 7.4375, 'learning_rate': 2.0568816658202134e-06,
+'rewards/chosen': -1.874894380569458, 'rewards/rejected': -4.289378643035889, '
+rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.4144845008850098,
+'logps/rejected': -317.19622802734375, 'logps/chosen': -363.76031494140625, 'lo
+gits/rejected': -1.0348272323608398, 'logits/chosen': -1.0769574642181396, 'epo
+ch': 3.99}
+{'loss': 0.2992, 'grad_norm': 3.078125, 'learning_rate': 2.0467242254951754e-06
+, 'rewards/chosen': -1.9023780822753906, 'rewards/rejected': -4.069437980651855
+5, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.1670598983764
+65, 'logps/rejected': -438.5189514160156, 'logps/chosen': -449.323974609375, 'l
+ogits/rejected': -1.0139119625091553, 'logits/chosen': -1.0844318866729736, 'ep
+och': 3.99}
+{'loss': 0.1659, 'grad_norm': 5.3125, 'learning_rate': 2.0365667851701374e-06,
+'rewards/chosen': -2.0608110427856445, 'rewards/rejected': -5.452472686767578,
+'rewards/accuracies': 0.9750000238418579, 'rewards/margins': 3.391662120819092,
+ 'logps/rejected': -428.5518493652344, 'logps/chosen': -495.7989196777344, 'log
+its/rejected': -1.0455700159072876, 'logits/chosen': -1.1583874225616455, 'epoc
+h': 4.0}
+ 80%|████████████████████████████████████████████████████████████████████
+           | 7996/9995 [4:12:24<56:07,  1.68s/it]
+ 33%|█████▌           | 329/999 [02:49<05:36,  1.99it/s]
+                                  60%|██████████▏     60%|████████████████▎
+   60%|▌| 603/999 [05:09<03:27,  1
+                                                               {'eval_loss': 0.
+47495749592781067, 'eval_runtime': 504.455, 'eval_samples_per_second': 3.961, '
+eval_steps_per_second': 1.98, 'eval_rewards/chosen': -2.168195962905884, 'eval_
+rewards/rejected': -4.0497727394104, 'eval_rewards/accuracies': 0.7777777910232
+544, 'eval_rewards/margins': 1.881576657295227, 'eval_logps/rejected': -366.241
+39404296875, 'eval_logps/chosen': -467.84521484375, 'eval_logits/rejected': -1.
+074088215827942, 'eval_logits/chosen': -1.1072996854782104, 'epoch': 4.0}
+{'loss': 0.1722, 'grad_norm': 1.6640625, 'learning_rate': 2.026409344845099e-06
+, 'rewards/chosen': -1.766158103942871, 'rewards/rejected': -4.366538047790527,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.6003801822662354
+, 'logps/rejected': -376.5361328125, 'logps/chosen': -533.4083862304688, 'logit
+s/rejected': -0.89259272813797, 'logits/chosen': -1.05154550075531, 'epoch': 4.
+0}
+{'loss': 0.2487, 'grad_norm': 3.84375, 'learning_rate': 2.016251904520061e-06,
+'rewards/chosen': -1.8771946430206299, 'rewards/rejected': -4.077783584594727,
+'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.200589418411255,
+ 'logps/rejected': -355.9342346191406, 'logps/chosen': -410.1380920410156, 'log
+its/rejected': -1.1502782106399536, 'logits/chosen': -1.1222002506256104, 'epoc
+h': 4.01}
+{'loss': 0.3342, 'grad_norm': 7.75, 'learning_rate': 2.006094464195023e-06, 're
+wards/chosen': -1.9753023386001587, 'rewards/rejected': -4.414158821105957, 're
+wards/accuracies': 0.8500000238418579, 'rewards/margins': 2.438856601715088, 'l
+ogps/rejected': -388.73406982421875, 'logps/chosen': -451.3836975097656, 'logit
+s/rejected': -1.190645456314087, 'logits/chosen': -1.246857762336731, 'epoch':
+4.01}
+{'loss': 0.1315, 'grad_norm': 1.8046875, 'learning_rate': 1.995937023869985e-06
+, 'rewards/chosen': -1.823706030845642, 'rewards/rejected': -5.060625076293945,
+ 'rewards/accuracies': 0.9750000238418579, 'rewards/margins': 3.236918926239013
+7, 'logps/rejected': -476.9341735839844, 'logps/chosen': -460.63897705078125, '
+logits/rejected': -1.082092046737671, 'logits/chosen': -1.1397451162338257, 'ep
+och': 4.02}
+{'loss': 0.3046, 'grad_norm': 4.25, 'learning_rate': 1.9857795835449465e-06, 'r
+ewards/chosen': -1.963631272315979, 'rewards/rejected': -4.314278602600098, 're
+wards/accuracies': 0.875, 'rewards/margins': 2.350646495819092, 'logps/rejected
+': -357.3634338378906, 'logps/chosen': -467.7984924316406, 'logits/rejected': -
+1.0814924240112305, 'logits/chosen': -1.1518151760101318, 'epoch': 4.02}
+{'loss': 0.2648, 'grad_norm': 3.78125, 'learning_rate': 1.975622143219909e-06,
+'rewards/chosen': -1.7598578929901123, 'rewards/rejected': -4.563824653625488,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.803966999053955, 'logps/rejec
+ted': -371.9184875488281, 'logps/chosen': -520.9894409179688, 'logits/rejected'
+: -1.0440312623977661, 'logits/chosen': -1.1117702722549438, 'epoch': 4.03}
+{'loss': 0.2532, 'grad_norm': 4.90625, 'learning_rate': 1.9654647028948705e-06,
+ 'rewards/chosen': -1.6418304443359375, 'rewards/rejected': -4.194991588592529,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.553161144256592
+, 'logps/rejected': -332.3205261230469, 'logps/chosen': -451.13507080078125, 'l
+ogits/rejected': -1.1176464557647705, 'logits/chosen': -1.1180503368377686, 'ep
+och': 4.03}
+{'loss': 0.2748, 'grad_norm': 13.9375, 'learning_rate': 1.9553072625698325e-06,
+ 'rewards/chosen': -1.679592490196228, 'rewards/rejected': -4.31862735748291, '
+rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.639035701751709, '
+logps/rejected': -370.98565673828125, 'logps/chosen': -520.1266479492188, 'logi
+ts/rejected': -1.0167847871780396, 'logits/chosen': -1.1724798679351807, 'epoch
+': 4.04}
+ 81%|██████████████████████████████████████████████           | 8077/9995 [4:23
+:05<52:29,  1.64s/it]{'loss': 0.2719, 'grad_norm': 3.0625, 'learning_rate': 1.9
+451498222447945e-06, 'rewards/chosen': -2.3678879737854004, 'rewards/rejected':
+ -4.616911888122559, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins
+': 2.249023914337158, 'logps/rejected': -409.96435546875, 'logps/chosen': -513.
+2185668945312, 'logits/rejected': -1.1682360172271729, 'logits/chosen': -1.2121
+35910987854, 'epoch': 4.04}
+{'loss': 0.3521, 'grad_norm': 19.625, 'learning_rate': 1.9349923819197565e-06,
+'rewards/chosen': -2.2035515308380127, 'rewards/rejected': -4.323158264160156,
+'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.1196072101593018
+, 'logps/rejected': -346.97637939453125, 'logps/chosen': -481.99273681640625, '
+logits/rejected': -1.0844886302947998, 'logits/chosen': -1.2747222185134888, 'e
+poch': 4.05}
+{'loss': 0.3187, 'grad_norm': 6.46875, 'learning_rate': 1.924834941594718e-06,
+'rewards/chosen': -2.0464930534362793, 'rewards/rejected': -3.7940945625305176,
+ 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 1.747600913047790
+5, 'logps/rejected': -366.9147644042969, 'logps/chosen': -438.71002197265625, '
+logits/rejected': -1.2005279064178467, 'logits/chosen': -1.186261773109436, 'ep
+och': 4.05}
+{'loss': 0.1939, 'grad_norm': 3.5, 'learning_rate': 1.91467750126968e-06, 'rewa
+rds/chosen': -1.7995246648788452, 'rewards/rejected': -4.35779333114624, 'rewar
+ds/accuracies': 0.949999988079071, 'rewards/margins': 2.5582687854766846, 'logp
+s/rejected': -345.6358947753906, 'logps/chosen': -436.08612060546875, 'logits/r
+ejected': -1.0253006219863892, 'logits/chosen': -1.1057581901550293, 'epoch': 4
+.06}
+{'loss': 0.3181, 'grad_norm': 3.390625, 'learning_rate': 1.9045200609446421e-06
+, 'rewards/chosen': -2.1019606590270996, 'rewards/rejected': -4.109295845031738
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.0073344707489014, 'logps/re
+jected': -313.42877197265625, 'logps/chosen': -485.451171875, 'logits/rejected'
+: -0.9777266383171082, 'logits/chosen': -1.1391432285308838, 'epoch': 4.06}
+{'loss': 0.2948, 'grad_norm': 3.3125, 'learning_rate': 1.894362620619604e-06, '
+rewards/chosen': -2.009690523147583, 'rewards/rejected': -4.515625476837158, 'r
+ewards/accuracies': 0.875, 'rewards/margins': 2.5059351921081543, 'logps/reject
+ed': -364.51336669921875, 'logps/chosen': -455.3828125, 'logits/rejected': -1.2
+124007940292358, 'logits/chosen': -1.1086094379425049, 'epoch': 4.07}
+{'loss': 0.4029, 'grad_norm': 7.65625, 'learning_rate': 1.884205180294566e-06,
+'rewards/chosen': -1.5819647312164307, 'rewards/rejected': -3.3950095176696777,
+ 'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 1.813044905662536
+6, 'logps/rejected': -345.91961669921875, 'logps/chosen': -502.05340576171875,
+'logits/rejected': -0.9629577398300171, 'logits/chosen': -1.1318546533584595, '
+epoch': 4.07}
+{'loss': 0.1892, 'grad_norm': 3.265625, 'learning_rate': 1.874047739969528e-06,
+ 'rewards/chosen': -2.018378257751465, 'rewards/rejected': -4.7514967918396, 'r
+ewards/accuracies': 0.925000011920929, 'rewards/margins': 2.733118772506714, 'l
+ogps/rejected': -331.861572265625, 'logps/chosen': -484.313720703125, 'logits/r
+ejected': -1.0067951679229736, 'logits/chosen': -1.0108981132507324, 'epoch': 4
+.08}
+{'loss': 0.2233, 'grad_norm': 9.8125, 'learning_rate': 1.8638902996444897e-06,
+'rewards/chosen': -2.0203356742858887, 'rewards/rejected': -4.7988080978393555,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.778472423553467
+, 'logps/rejected': -382.5973815917969, 'logps/chosen': -471.7003479003906, 'lo
+gits/rejected': -1.060412049293518, 'logits/chosen': -1.1241111755371094, 'epoc
+h': 4.08}
+{'loss': 0.2255, 'grad_norm': 5.8125, 'learning_rate': 1.8537328593194517e-06,
+'rewards/chosen': -1.7698447704315186, 'rewards/rejected': -4.280308723449707,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.5104644298553467
+, 'logps/rejected': -365.49169921875, 'logps/chosen': -461.08819580078125, 'log
+its/rejected': -1.0591481924057007, 'logits/chosen': -1.0935992002487183, 'epoc
+h': 4.09}
+{'loss': 0.4996, 'grad_norm': 9.6875, 'learning_rate': 1.8435754189944135e-06,
+'rewards/chosen': -1.800415277481079, 'rewards/rejected': -4.099579811096191, '
+rewards/accuracies': 0.7749999761581421, 'rewards/margins': 2.299164295196533,
+'logps/rejected': -383.1225280761719, 'logps/chosen': -494.4837951660156, 'logi
+ts/rejected': -1.0686479806900024, 'logits/chosen': -1.1900312900543213, 'epoch
+': 4.09}
+{'loss': 0.2159, 'grad_norm': 4.46875, 'learning_rate': 1.8334179786693753e-06,
+ 'rewards/chosen': -2.0368154048919678, 'rewards/rejected': -4.604604721069336,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.567789077758789,
+ 'logps/rejected': -315.2268371582031, 'logps/chosen': -420.38214111328125, 'lo
+gits/rejected': -1.0721995830535889, 'logits/chosen': -1.1315311193466187, 'epo
+ch': 4.1}
+{'loss': 0.1912, 'grad_norm': 1.1328125, 'learning_rate': 1.8232605383443375e-0
+6, 'rewards/chosen': -1.946662187576294, 'rewards/rejected': -4.980032444000244
+, 'rewards/accuracies': 0.875, 'rewards/margins': 3.033370018005371, 'logps/rej
+ected': -332.33160400390625, 'logps/chosen': -452.576171875, 'logits/rejected':
+ -0.9364272356033325, 'logits/chosen': -1.020637035369873, 'epoch': 4.1}
+{'loss': 0.3869, 'grad_norm': 8.0, 'learning_rate': 1.8131030980192993e-06, 're
+wards/chosen': -2.256385326385498, 'rewards/rejected': -4.123523712158203, 'rew
+ards/accuracies': 0.800000011920929, 'rewards/margins': 1.8671382665634155, 'lo
+gps/rejected': -407.47967529296875, 'logps/chosen': -402.50445556640625, 'logit
+s/rejected': -1.0437219142913818, 'logits/chosen': -1.1322212219238281, 'epoch'
+: 4.11}
+{'loss': 0.2615, 'grad_norm': 7.03125, 'learning_rate': 1.802945657694261e-06,
+'rewards/chosen': -2.2410359382629395, 'rewards/rejected': -4.852658748626709,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.6116228103637695, 'logps/reje
+cted': -343.52734375, 'logps/chosen': -473.25115966796875, 'logits/rejected': -
+0.886125385761261, 'logits/chosen': -1.0071280002593994, 'epoch': 4.11}
+{'loss': 0.4742, 'grad_norm': 2.8125, 'learning_rate': 1.7927882173692233e-06,
+'rewards/chosen': -1.9833717346191406, 'rewards/rejected': -3.9830825328826904,
+ 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 1.9997106790542603
+, 'logps/rejected': -349.1069030761719, 'logps/chosen': -468.33209228515625, 'l
+ogits/rejected': -1.058315396308899, 'logits/chosen': -1.0659505128860474, 'epo
+ch': 4.12}
+{'loss': 0.3694, 'grad_norm': 0.52734375, 'learning_rate': 1.782630777044185e-0
+6, 'rewards/chosen': -2.1161627769470215, 'rewards/rejected': -4.4585280418396,
+ 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.3423655033111572
+, 'logps/rejected': -389.46002197265625, 'logps/chosen': -458.9502868652344, 'l
+ogits/rejected': -1.1613962650299072, 'logits/chosen': -1.2578165531158447, 'ep
+och': 4.12}
+{'loss': 0.1668, 'grad_norm': 1.5859375, 'learning_rate': 1.7724733367191469e-0
+6, 'rewards/chosen': -1.4791417121887207, 'rewards/rejected': -4.43278360366821
+3, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.95364141464233
+4, 'logps/rejected': -339.25567626953125, 'logps/chosen': -442.8809509277344, '
+logits/rejected': -1.0807222127914429, 'logits/chosen': -1.0933735370635986, 'e
+poch': 4.13}
+{'loss': 0.4355, 'grad_norm': 2.78125, 'learning_rate': 1.7623158963941089e-06,
+ 'rewards/chosen': -2.355776309967041, 'rewards/rejected': -4.72908353805542, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.373307228088379,
+'logps/rejected': -428.2796936035156, 'logps/chosen': -493.95257568359375, 'log
+its/rejected': -1.0634247064590454, 'logits/chosen': -1.1939611434936523, 'epoc
+h': 4.13}
+{'loss': 0.2293, 'grad_norm': 8.3125, 'learning_rate': 1.7521584560690707e-06,
+'rewards/chosen': -1.6708844900131226, 'rewards/rejected': -4.648961544036865,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.9780774116516113
+, 'logps/rejected': -392.79705810546875, 'logps/chosen': -516.5932006835938, 'l
+ogits/rejected': -0.9573094248771667, 'logits/chosen': -1.0823253393173218, 'ep
+och': 4.14}
+{'loss': 0.2072, 'grad_norm': 3.875, 'learning_rate': 1.7420010157440327e-06, '
+rewards/chosen': -2.1558711528778076, 'rewards/rejected': -4.756799221038818, '
+rewards/accuracies': 0.9750000238418579, 'rewards/margins': 2.6009280681610107,
+ 'logps/rejected': -461.10089111328125, 'logps/chosen': -502.63592529296875, 'l
+ogits/rejected': -1.0630321502685547, 'logits/chosen': -1.078048825263977, 'epo
+ch': 4.14}
+{'loss': 0.1679, 'grad_norm': 0.9140625, 'learning_rate': 1.7318435754189947e-0
+6, 'rewards/chosen': -1.3993561267852783, 'rewards/rejected': -4.43207550048828
+1, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.03271985054016
+1, 'logps/rejected': -391.8898620605469, 'logps/chosen': -481.0203552246094, 'l
+ogits/rejected': -1.089224100112915, 'logits/chosen': -0.993059515953064, 'epoc
+h': 4.15}
+{'loss': 0.3006, 'grad_norm': 0.8125, 'learning_rate': 1.7216861350939565e-06,
+'rewards/chosen': -1.9718945026397705, 'rewards/rejected': -4.546695709228516,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.574801445007324,
+ 'logps/rejected': -442.474853515625, 'logps/chosen': -538.5066528320312, 'logi
+ts/rejected': -1.1668546199798584, 'logits/chosen': -1.1623362302780151, 'epoch
+': 4.15}
+{'loss': 0.3266, 'grad_norm': 1.65625, 'learning_rate': 1.7115286947689182e-06,
+ 'rewards/chosen': -1.7741858959197998, 'rewards/rejected': -4.338992118835449,
+ 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.5648062229156494
+, 'logps/rejected': -368.4770202636719, 'logps/chosen': -435.62908935546875, 'l
+ogits/rejected': -0.9803959131240845, 'logits/chosen': -1.0658438205718994, 'ep
+och': 4.16}
+{'loss': 0.2227, 'grad_norm': 1.9296875, 'learning_rate': 1.7013712544438805e-0
+6, 'rewards/chosen': -1.650262475013733, 'rewards/rejected': -3.966460466384887
+7, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.31619834899902
+34, 'logps/rejected': -422.10003662109375, 'logps/chosen': -572.1597900390625,
+'logits/rejected': -1.1206269264221191, 'logits/chosen': -1.1864063739776611, '
+epoch': 4.16}
+{'loss': 0.2619, 'grad_norm': 3.359375, 'learning_rate': 1.6912138141188422e-06
+, 'rewards/chosen': -1.6626055240631104, 'rewards/rejected': -4.085259914398193
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.42265462875366
+2, 'logps/rejected': -398.4306945800781, 'logps/chosen': -451.29779052734375, '
+logits/rejected': -1.1378247737884521, 'logits/chosen': -1.1516488790512085, 'e
+poch': 4.17}
+{'loss': 0.2395, 'grad_norm': 5.21875, 'learning_rate': 1.681056373793804e-06,
+'rewards/chosen': -1.8147633075714111, 'rewards/rejected': -4.575440406799316,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.760676860809326,
+ 'logps/rejected': -439.52154541015625, 'logps/chosen': -442.77935791015625, 'l
+ogits/rejected': -1.051893949508667, 'logits/chosen': -1.166205644607544, 'epoc
+h': 4.17}
+{'loss': 0.2351, 'grad_norm': 3.671875, 'learning_rate': 1.670898933468766e-06,
+ 'rewards/chosen': -2.0376811027526855, 'rewards/rejected': -4.8964152336120605
+, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.85873436927795
+4, 'logps/rejected': -390.0446472167969, 'logps/chosen': -441.22198486328125, '
+logits/rejected': -0.9488825798034668, 'logits/chosen': -1.0320571660995483, 'e
+poch': 4.18}
+{'loss': 0.1961, 'grad_norm': 5.3125, 'learning_rate': 1.660741493143728e-06, '
+rewards/chosen': -1.9951152801513672, 'rewards/rejected': -4.647368431091309, '
+rewards/accuracies': 0.9750000238418579, 'rewards/margins': 2.652252674102783,
+'logps/rejected': -444.52801513671875, 'logps/chosen': -501.2509765625, 'logits
+/rejected': -1.2276222705841064, 'logits/chosen': -1.226577639579773, 'epoch':
+4.18}
+{'loss': 0.2334, 'grad_norm': 0.51953125, 'learning_rate': 1.6505840528186898e-
+06, 'rewards/chosen': -2.0958080291748047, 'rewards/rejected': -4.6080713272094
+73, 'rewards/accuracies': 0.875, 'rewards/margins': 2.5122628211975098, 'logps/
+rejected': -321.8656311035156, 'logps/chosen': -435.83203125, 'logits/rejected'
+: -1.0777827501296997, 'logits/chosen': -1.1729480028152466, 'epoch': 4.19}
+{'loss': 0.2335, 'grad_norm': 0.796875, 'learning_rate': 1.6404266124936518e-06
+, 'rewards/chosen': -2.0038161277770996, 'rewards/rejected': -4.343626976013184
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.339810609817505
+, 'logps/rejected': -309.98236083984375, 'logps/chosen': -395.2626037597656, 'l
+ogits/rejected': -1.1440812349319458, 'logits/chosen': -1.1816107034683228, 'ep
+och': 4.19}
+{'loss': 0.2516, 'grad_norm': 1.703125, 'learning_rate': 1.6302691721686136e-06
+, 'rewards/chosen': -1.8194894790649414, 'rewards/rejected': -4.304600238800049
+, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.48511075973510
+74, 'logps/rejected': -382.9305725097656, 'logps/chosen': -518.3048706054688, '
+logits/rejected': -1.1331822872161865, 'logits/chosen': -1.1447285413742065, 'e
+poch': 4.2}
+{'loss': 0.2664, 'grad_norm': 9.3125, 'learning_rate': 1.6201117318435754e-06,
+'rewards/chosen': -1.824441909790039, 'rewards/rejected': -4.414032936096191, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.5895907878875732, 'logps/rejec
+ted': -364.1955261230469, 'logps/chosen': -469.814697265625, 'logits/rejected':
+ -1.0153594017028809, 'logits/chosen': -1.0920058488845825, 'epoch': 4.2}
+{'loss': 0.1658, 'grad_norm': 4.0625, 'learning_rate': 1.6099542915185374e-06,
+'rewards/chosen': -2.0152432918548584, 'rewards/rejected': -5.0214385986328125,
+ 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.006195068359375,
+ 'logps/rejected': -476.8832092285156, 'logps/chosen': -520.8375244140625, 'log
+its/rejected': -1.158797264099121, 'logits/chosen': -1.216692566871643, 'epoch'
+: 4.21}
+{'loss': 0.195, 'grad_norm': 1.1640625, 'learning_rate': 1.5997968511934994e-06
+, 'rewards/chosen': -1.829676866531372, 'rewards/rejected': -4.812590599060059,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.9829134941101074, 'logps/rej
+ected': -369.2105407714844, 'logps/chosen': -503.4212951660156, 'logits/rejecte
+d': -0.9991243481636047, 'logits/chosen': -1.0175460577011108, 'epoch': 4.21}
+{'loss': 0.343, 'grad_norm': 1.953125, 'learning_rate': 1.5896394108684612e-06,
+ 'rewards/chosen': -1.9962356090545654, 'rewards/rejected': -4.310269355773926,
+ 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.314033985137939
+5, 'logps/rejected': -354.5487976074219, 'logps/chosen': -443.1480407714844, 'l
+ogits/rejected': -1.0975892543792725, 'logits/chosen': -1.067334771156311, 'epo
+ch': 4.22}
+{'loss': 0.2687, 'grad_norm': 1.234375, 'learning_rate': 1.579481970543423e-06,
+ 'rewards/chosen': -1.6045677661895752, 'rewards/rejected': -4.275185585021973,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.67061710357666,
+'logps/rejected': -373.6134033203125, 'logps/chosen': -456.41119384765625, 'log
+its/rejected': -1.0247186422348022, 'logits/chosen': -1.095969796180725, 'epoch
+': 4.22}
+{'loss': 0.3511, 'grad_norm': 5.40625, 'learning_rate': 1.5693245302183852e-06,
+ 'rewards/chosen': -1.7315384149551392, 'rewards/rejected': -4.388285160064697,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.656746387481689
+5, 'logps/rejected': -499.11004638671875, 'logps/chosen': -534.154541015625, 'l
+ogits/rejected': -1.0104981660842896, 'logits/chosen': -1.0829811096191406, 'ep
+och': 4.23}
+{'loss': 0.152, 'grad_norm': 4.03125, 'learning_rate': 1.559167089893347e-06, '
+rewards/chosen': -1.9754703044891357, 'rewards/rejected': -4.750175476074219, '
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.774704694747925, '
+logps/rejected': -417.9634704589844, 'logps/chosen': -477.76678466796875, 'logi
+ts/rejected': -1.113508701324463, 'logits/chosen': -1.1097514629364014, 'epoch'
+: 4.23}
+{'loss': 0.2766, 'grad_norm': 6.15625, 'learning_rate': 1.5490096495683088e-06,
+ 'rewards/chosen': -2.0664985179901123, 'rewards/rejected': -4.772073268890381,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.705574274063110
+4, 'logps/rejected': -379.03363037109375, 'logps/chosen': -498.22833251953125,
+'logits/rejected': -1.1338666677474976, 'logits/chosen': -1.129425048828125, 'e
+poch': 4.24}
+{'loss': 0.2276, 'grad_norm': 4.84375, 'learning_rate': 1.5388522092432708e-06,
+ 'rewards/chosen': -2.3446459770202637, 'rewards/rejected': -4.694550514221191,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.3499042987823486, 'logps/rej
+ected': -366.1290588378906, 'logps/chosen': -454.0445251464844, 'logits/rejecte
+d': -1.131150245666504, 'logits/chosen': -1.1059821844100952, 'epoch': 4.24}
+{'loss': 0.2307, 'grad_norm': 5.46875, 'learning_rate': 1.5286947689182328e-06,
+ 'rewards/chosen': -2.101013660430908, 'rewards/rejected': -5.111259937286377,
+'rewards/accuracies': 0.875, 'rewards/margins': 3.010246515274048, 'logps/rejec
+ted': -392.7891845703125, 'logps/chosen': -409.4001770019531, 'logits/rejected'
+: -1.0633931159973145, 'logits/chosen': -1.1061275005340576, 'epoch': 4.25}
+{'loss': 0.2511, 'grad_norm': 5.6875, 'learning_rate': 1.5185373285931946e-06,
+'rewards/chosen': -1.5216619968414307, 'rewards/rejected': -3.814044952392578,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.2923831939697266, 'logps/reje
+cted': -412.4237365722656, 'logps/chosen': -429.5718688964844, 'logits/rejected
+': -1.1144626140594482, 'logits/chosen': -1.1451765298843384, 'epoch': 4.25}
+{'loss': 0.2446, 'grad_norm': 1.296875, 'learning_rate': 1.5083798882681566e-06
+, 'rewards/chosen': -1.602085828781128, 'rewards/rejected': -4.363592624664307,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.761506557464599
+6, 'logps/rejected': -338.94390869140625, 'logps/chosen': -562.6492919921875, '
+logits/rejected': -1.1898579597473145, 'logits/chosen': -1.271883487701416, 'ep
+och': 4.26}
+{'loss': 0.1989, 'grad_norm': 10.75, 'learning_rate': 1.4982224479431184e-06, '
+rewards/chosen': -2.17635178565979, 'rewards/rejected': -5.139142990112305, 're
+wards/accuracies': 0.925000011920929, 'rewards/margins': 2.9627914428710938, 'l
+ogps/rejected': -429.4120178222656, 'logps/chosen': -509.24969482421875, 'logit
+s/rejected': -1.1234261989593506, 'logits/chosen': -1.1766854524612427, 'epoch'
+: 4.26}
+{'loss': 0.3282, 'grad_norm': 8.875, 'learning_rate': 1.4880650076180802e-06, '
+rewards/chosen': -2.063673973083496, 'rewards/rejected': -4.7759904861450195, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.7123162746429443, 'logps/rejec
+ted': -430.1671447753906, 'logps/chosen': -481.89337158203125, 'logits/rejected
+': -1.162754774093628, 'logits/chosen': -1.0712814331054688, 'epoch': 4.27}
+{'loss': 0.3605, 'grad_norm': 7.96875, 'learning_rate': 1.4779075672930424e-06,
+ 'rewards/chosen': -2.128194808959961, 'rewards/rejected': -4.498326778411865,
+'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 2.3701324462890625
+, 'logps/rejected': -369.68402099609375, 'logps/chosen': -505.96185302734375, '
+logits/rejected': -1.0392510890960693, 'logits/chosen': -1.1056827306747437, 'e
+poch': 4.27}
+{'loss': 0.1831, 'grad_norm': 0.625, 'learning_rate': 1.4677501269680042e-06, '
+rewards/chosen': -1.6089824438095093, 'rewards/rejected': -4.25191593170166, 'r
+ewards/accuracies': 0.949999988079071, 'rewards/margins': 2.6429333686828613, '
+logps/rejected': -352.93817138671875, 'logps/chosen': -478.70782470703125, 'log
+its/rejected': -1.0541887283325195, 'logits/chosen': -1.1151751279830933, 'epoc
+h': 4.28}
+{'loss': 0.1918, 'grad_norm': 2.34375, 'learning_rate': 1.457592686642966e-06,
+'rewards/chosen': -1.6385847330093384, 'rewards/rejected': -4.444677829742432,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.8060927391052246,
+ 'logps/rejected': -369.8240661621094, 'logps/chosen': -460.26556396484375, 'lo
+gits/rejected': -1.0814520120620728, 'logits/chosen': -1.0799397230148315, 'epo
+ch': 4.28}
+{'loss': 0.1536, 'grad_norm': 2.265625, 'learning_rate': 1.4474352463179282e-06
+, 'rewards/chosen': -2.031416893005371, 'rewards/rejected': -5.2259602546691895
+, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.194543600082397
+5, 'logps/rejected': -416.628662109375, 'logps/chosen': -409.4874267578125, 'lo
+gits/rejected': -0.9819363355636597, 'logits/chosen': -1.0168931484222412, 'epo
+ch': 4.29}
+{'loss': 0.2987, 'grad_norm': 0.91796875, 'learning_rate': 1.43727780599289e-06
+, 'rewards/chosen': -1.8131897449493408, 'rewards/rejected': -4.307647228240967
+, 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.494457960128784
+, 'logps/rejected': -364.2724609375, 'logps/chosen': -455.7449645996094, 'logit
+s/rejected': -0.9322759509086609, 'logits/chosen': -1.0380603075027466, 'epoch'
+: 4.29}
+{'loss': 0.3212, 'grad_norm': 2.859375, 'learning_rate': 1.4271203656678517e-06
+, 'rewards/chosen': -2.129488229751587, 'rewards/rejected': -4.305838108062744,
+ 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.176349639892578,
+ 'logps/rejected': -382.0689392089844, 'logps/chosen': -431.204345703125, 'logi
+ts/rejected': -0.9397391080856323, 'logits/chosen': -1.0134087800979614, 'epoch
+': 4.3}
+{'loss': 0.2819, 'grad_norm': 2.984375, 'learning_rate': 1.4169629253428137e-06
+, 'rewards/chosen': -1.8086249828338623, 'rewards/rejected': -4.074723720550537
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.26609849929809
+57, 'logps/rejected': -434.065673828125, 'logps/chosen': -509.38720703125, 'log
+its/rejected': -1.018850564956665, 'logits/chosen': -1.0755698680877686, 'epoch
+': 4.3}
+{'loss': 0.3665, 'grad_norm': 3.6875, 'learning_rate': 1.4068054850177757e-06,
+'rewards/chosen': -2.0131990909576416, 'rewards/rejected': -4.0635576248168945,
+ 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.050358295440674,
+ 'logps/rejected': -346.2970275878906, 'logps/chosen': -478.79473876953125, 'lo
+gits/rejected': -1.0174028873443604, 'logits/chosen': -1.1559056043624878, 'epo
+ch': 4.31}
+{'loss': 0.2684, 'grad_norm': 0.63671875, 'learning_rate': 1.3966480446927375e-
+06, 'rewards/chosen': -2.13993501663208, 'rewards/rejected': -4.662578582763672
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.52264404296875
+, 'logps/rejected': -380.74761962890625, 'logps/chosen': -448.2334899902344, 'l
+ogits/rejected': -1.0611011981964111, 'logits/chosen': -1.1510612964630127, 'ep
+och': 4.31}
+{'loss': 0.245, 'grad_norm': 0.2734375, 'learning_rate': 1.3864906043676995e-06
+, 'rewards/chosen': -1.7710996866226196, 'rewards/rejected': -4.237215042114258
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.4661154747009277, 'logps/re
+jected': -393.8495178222656, 'logps/chosen': -523.8285522460938, 'logits/reject
+ed': -1.0218324661254883, 'logits/chosen': -1.1116544008255005, 'epoch': 4.32}
+{'loss': 0.1938, 'grad_norm': 6.09375, 'learning_rate': 1.3763331640426613e-06,
+ 'rewards/chosen': -1.7019729614257812, 'rewards/rejected': -4.419580936431885,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.717607975006103
+5, 'logps/rejected': -285.50750732421875, 'logps/chosen': -476.4739685058594, '
+logits/rejected': -0.9955774545669556, 'logits/chosen': -1.0547372102737427, 'e
+poch': 4.32}
+{'loss': 0.1189, 'grad_norm': 2.671875, 'learning_rate': 1.3661757237176231e-06
+, 'rewards/chosen': -1.6340978145599365, 'rewards/rejected': -4.63204288482666,
+ 'rewards/accuracies': 1.0, 'rewards/margins': 2.9979453086853027, 'logps/rejec
+ted': -378.337646484375, 'logps/chosen': -430.420166015625, 'logits/rejected':
+-0.8289278149604797, 'logits/chosen': -0.8229583501815796, 'epoch': 4.33}
+{'loss': 0.2712, 'grad_norm': 2.359375, 'learning_rate': 1.3560182833925853e-06
+, 'rewards/chosen': -2.0337166786193848, 'rewards/rejected': -4.311076641082764
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.27735996246337
+9, 'logps/rejected': -418.24615478515625, 'logps/chosen': -507.44927978515625,
+'logits/rejected': -1.1183452606201172, 'logits/chosen': -1.1045728921890259, '
+epoch': 4.33}
+{'loss': 0.3887, 'grad_norm': 7.46875, 'learning_rate': 1.3458608430675471e-06,
+ 'rewards/chosen': -2.309626340866089, 'rewards/rejected': -4.55762243270874, '
+rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.247995615005493, '
+logps/rejected': -433.80340576171875, 'logps/chosen': -508.1192932128906, 'logi
+ts/rejected': -1.147444248199463, 'logits/chosen': -1.1858527660369873, 'epoch'
+: 4.34}
+{'loss': 0.2599, 'grad_norm': 1.3671875, 'learning_rate': 1.335703402742509e-06
+, 'rewards/chosen': -2.06937313079834, 'rewards/rejected': -4.447807788848877,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.378434419631958,
+'logps/rejected': -322.767578125, 'logps/chosen': -435.03936767578125, 'logits/
+rejected': -0.9940052032470703, 'logits/chosen': -1.0908946990966797, 'epoch':
+4.34}
+{'loss': 0.2688, 'grad_norm': 5.71875, 'learning_rate': 1.3255459624174711e-06,
+ 'rewards/chosen': -1.8001426458358765, 'rewards/rejected': -4.365099906921387,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.564957141876220
+7, 'logps/rejected': -353.12506103515625, 'logps/chosen': -470.4305114746094, '
+logits/rejected': -0.968826413154602, 'logits/chosen': -1.044567346572876, 'epo
+ch': 4.35}
+{'loss': 0.1579, 'grad_norm': 2.03125, 'learning_rate': 1.315388522092433e-06,
+'rewards/chosen': -1.4065606594085693, 'rewards/rejected': -3.863323211669922,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.4567627906799316,
+ 'logps/rejected': -353.7173767089844, 'logps/chosen': -529.2870483398438, 'log
+its/rejected': -1.2069894075393677, 'logits/chosen': -1.2416762113571167, 'epoc
+h': 4.35}
+{'loss': 0.2755, 'grad_norm': 2.171875, 'learning_rate': 1.3052310817673947e-06
+, 'rewards/chosen': -2.225794792175293, 'rewards/rejected': -5.133664131164551,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.907869100570678
+7, 'logps/rejected': -391.4913024902344, 'logps/chosen': -532.4593505859375, 'l
+ogits/rejected': -1.2098939418792725, 'logits/chosen': -1.1547110080718994, 'ep
+och': 4.36}
+{'loss': 0.1629, 'grad_norm': 3.140625, 'learning_rate': 1.2950736414423567e-06
+, 'rewards/chosen': -2.049919366836548, 'rewards/rejected': -4.67088508605957,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.6209654808044434,
+ 'logps/rejected': -372.5084228515625, 'logps/chosen': -433.78802490234375, 'lo
+gits/rejected': -1.1585736274719238, 'logits/chosen': -1.168104887008667, 'epoc
+h': 4.36}
+{'loss': 0.1988, 'grad_norm': 4.65625, 'learning_rate': 1.2849162011173185e-06,
+ 'rewards/chosen': -1.7561193704605103, 'rewards/rejected': -4.673480033874512,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.917361259460449,
+ 'logps/rejected': -381.22320556640625, 'logps/chosen': -556.0369262695312, 'lo
+gits/rejected': -1.0905048847198486, 'logits/chosen': -1.1444706916809082, 'epo
+ch': 4.37}
+{'loss': 0.2026, 'grad_norm': 2.546875, 'learning_rate': 1.2747587607922805e-06
+, 'rewards/chosen': -1.6342010498046875, 'rewards/rejected': -4.501772880554199
+, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.86757206916809
+1, 'logps/rejected': -406.935302734375, 'logps/chosen': -682.5640869140625, 'lo
+gits/rejected': -1.2694282531738281, 'logits/chosen': -1.311712384223938, 'epoc
+h': 4.37}
+{'loss': 0.3981, 'grad_norm': 10.4375, 'learning_rate': 1.2646013204672425e-06,
+ 'rewards/chosen': -1.8866075277328491, 'rewards/rejected': -4.061065673828125,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.174458026885986
+3, 'logps/rejected': -390.0165100097656, 'logps/chosen': -550.2576293945312, 'l
+ogits/rejected': -1.0751440525054932, 'logits/chosen': -1.1974295377731323, 'ep
+och': 4.38}
+{'loss': 0.2018, 'grad_norm': 4.96875, 'learning_rate': 1.2544438801422043e-06,
+ 'rewards/chosen': -2.0135586261749268, 'rewards/rejected': -4.575706958770752,
+ 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.5621485710144043
+, 'logps/rejected': -346.9783935546875, 'logps/chosen': -404.20062255859375, 'l
+ogits/rejected': -1.0884019136428833, 'logits/chosen': -1.0557162761688232, 'ep
+och': 4.38}
+{'loss': 0.2275, 'grad_norm': 4.5625, 'learning_rate': 1.244286439817166e-06, '
+rewards/chosen': -1.806822419166565, 'rewards/rejected': -4.382126331329346, 'r
+ewards/accuracies': 0.875, 'rewards/margins': 2.5753040313720703, 'logps/reject
+ed': -385.75323486328125, 'logps/chosen': -489.487548828125, 'logits/rejected':
+ -1.061262845993042, 'logits/chosen': -1.1075382232666016, 'epoch': 4.39}
+{'loss': 0.2628, 'grad_norm': 5.09375, 'learning_rate': 1.234128999492128e-06,
+'rewards/chosen': -1.6577545404434204, 'rewards/rejected': -3.719799041748047,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.062044620513916,
+ 'logps/rejected': -418.39874267578125, 'logps/chosen': -445.4549865722656, 'lo
+gits/rejected': -1.0370543003082275, 'logits/chosen': -1.0361478328704834, 'epo
+ch': 4.39}
+{'loss': 0.1293, 'grad_norm': 3.84375, 'learning_rate': 1.22397155916709e-06, '
+rewards/chosen': -1.7409652471542358, 'rewards/rejected': -4.726922512054443, '
+rewards/accuracies': 0.9750000238418579, 'rewards/margins': 2.985957622528076,
+'logps/rejected': -408.8507385253906, 'logps/chosen': -513.9370727539062, 'logi
+ts/rejected': -1.193025827407837, 'logits/chosen': -1.244467854499817, 'epoch':
+ 4.4}
+{'loss': 0.3153, 'grad_norm': 0.037841796875, 'learning_rate': 1.21381411884205
+19e-06, 'rewards/chosen': -2.130363941192627, 'rewards/rejected': -4.6556625366
+21094, 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.5252990722
+65625, 'logps/rejected': -394.75555419921875, 'logps/chosen': -471.835052490234
+4, 'logits/rejected': -0.9612566828727722, 'logits/chosen': -0.8998651504516602
+, 'epoch': 4.4}
+{'loss': 0.2988, 'grad_norm': 5.375, 'learning_rate': 1.2036566785170139e-06, '
+rewards/chosen': -1.8389517068862915, 'rewards/rejected': -4.129910469055176, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.290958881378174,
+'logps/rejected': -383.8333740234375, 'logps/chosen': -432.96478271484375, 'log
+its/rejected': -1.1344892978668213, 'logits/chosen': -1.193511962890625, 'epoch
+': 4.41}
+{'loss': 0.2739, 'grad_norm': 2.546875, 'learning_rate': 1.1934992381919759e-06
+, 'rewards/chosen': -2.279060125350952, 'rewards/rejected': -4.567635536193848,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.2885756492614746, 'logps/rej
+ected': -362.7035217285156, 'logps/chosen': -466.5870056152344, 'logits/rejecte
+d': -1.0751769542694092, 'logits/chosen': -1.147747278213501, 'epoch': 4.41}
+{'loss': 0.2013, 'grad_norm': 8.6875, 'learning_rate': 1.1833417978669377e-06,
+'rewards/chosen': -1.9668222665786743, 'rewards/rejected': -4.54669189453125, '
+rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.5798699855804443,
+'logps/rejected': -391.31121826171875, 'logps/chosen': -489.35382080078125, 'lo
+gits/rejected': -1.1543536186218262, 'logits/chosen': -1.1376627683639526, 'epo
+ch': 4.42}
+{'loss': 0.3517, 'grad_norm': 0.8125, 'learning_rate': 1.1731843575418997e-06,
+'rewards/chosen': -2.046855926513672, 'rewards/rejected': -4.263967514038086, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.217111825942993, 'logps/reject
+ed': -324.39678955078125, 'logps/chosen': -416.60784912109375, 'logits/rejected
+': -0.9658868908882141, 'logits/chosen': -1.0338705778121948, 'epoch': 4.42}
+{'loss': 0.1563, 'grad_norm': 3.5625, 'learning_rate': 1.1630269172168614e-06,
+'rewards/chosen': -1.9672622680664062, 'rewards/rejected': -4.625397682189941,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.6581358909606934,
+ 'logps/rejected': -420.4954528808594, 'logps/chosen': -468.64752197265625, 'lo
+gits/rejected': -1.1155465841293335, 'logits/chosen': -1.1347014904022217, 'epo
+ch': 4.43}
+{'loss': 0.3241, 'grad_norm': 4.625, 'learning_rate': 1.1528694768918232e-06, '
+rewards/chosen': -2.2563107013702393, 'rewards/rejected': -4.336421012878418, '
+rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.0801100730895996,
+'logps/rejected': -332.3866882324219, 'logps/chosen': -464.06304931640625, 'log
+its/rejected': -1.0554769039154053, 'logits/chosen': -1.0686978101730347, 'epoc
+h': 4.43}
+{'loss': 0.2393, 'grad_norm': 8.5625, 'learning_rate': 1.1427120365667852e-06,
+'rewards/chosen': -1.4913169145584106, 'rewards/rejected': -4.683067798614502,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.1917507648468018
+, 'logps/rejected': -358.6627502441406, 'logps/chosen': -500.63946533203125, 'l
+ogits/rejected': -1.1542924642562866, 'logits/chosen': -1.0947811603546143, 'ep
+och': 4.44}
+{'loss': 0.1996, 'grad_norm': 8.375, 'learning_rate': 1.1325545962417472e-06, '
+rewards/chosen': -1.8625186681747437, 'rewards/rejected': -4.74355411529541, 'r
+ewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.881035327911377, '
+logps/rejected': -410.69049072265625, 'logps/chosen': -500.03594970703125, 'log
+its/rejected': -1.159285545349121, 'logits/chosen': -1.2939679622650146, 'epoch
+': 4.44}
+{'loss': 0.369, 'grad_norm': 0.640625, 'learning_rate': 1.122397155916709e-06,
+'rewards/chosen': -1.8483425378799438, 'rewards/rejected': -3.9481372833251953,
+ 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.099794387817383,
+ 'logps/rejected': -398.141845703125, 'logps/chosen': -464.74591064453125, 'log
+its/rejected': -1.058234691619873, 'logits/chosen': -0.9555779695510864, 'epoch
+': 4.45}
+{'loss': 0.3788, 'grad_norm': 3.078125, 'learning_rate': 1.112239715591671e-06,
+ 'rewards/chosen': -2.0298404693603516, 'rewards/rejected': -4.5801286697387695
+, 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.550287723541259
+8, 'logps/rejected': -431.47991943359375, 'logps/chosen': -540.6671752929688, '
+logits/rejected': -1.3400537967681885, 'logits/chosen': -1.2716121673583984, 'e
+poch': 4.45}
+{'loss': 0.2115, 'grad_norm': 1.34375, 'learning_rate': 1.1020822752666328e-06,
+ 'rewards/chosen': -1.9024633169174194, 'rewards/rejected': -4.6089982986450195
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.70653533935546
+88, 'logps/rejected': -468.28582763671875, 'logps/chosen': -542.8369140625, 'lo
+gits/rejected': -1.1468945741653442, 'logits/chosen': -1.2155059576034546, 'epo
+ch': 4.46}
+{'loss': 0.2314, 'grad_norm': 10.25, 'learning_rate': 1.0919248349415948e-06, '
+rewards/chosen': -1.7640365362167358, 'rewards/rejected': -4.259801387786865, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.4957642555236816,
+ 'logps/rejected': -368.91534423828125, 'logps/chosen': -479.7527770996094, 'lo
+gits/rejected': -0.9650536775588989, 'logits/chosen': -1.0618281364440918, 'epo
+ch': 4.46}
+{'loss': 0.155, 'grad_norm': 1.328125, 'learning_rate': 1.0817673946165568e-06,
+ 'rewards/chosen': -1.5017547607421875, 'rewards/rejected': -4.324209213256836,
+ 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.8224549293518066
+, 'logps/rejected': -362.49932861328125, 'logps/chosen': -606.5133666992188, 'l
+ogits/rejected': -1.1313215494155884, 'logits/chosen': -1.1420538425445557, 'ep
+och': 4.47}
+{'loss': 0.3252, 'grad_norm': 2.84375, 'learning_rate': 1.0716099542915186e-06,
+ 'rewards/chosen': -1.6963717937469482, 'rewards/rejected': -4.228003025054932,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.5316309928894043, 'logps/rej
+ected': -391.99346923828125, 'logps/chosen': -514.3739013671875, 'logits/reject
+ed': -0.9878513216972351, 'logits/chosen': -1.0260839462280273, 'epoch': 4.47}
+{'loss': 0.2616, 'grad_norm': 7.28125, 'learning_rate': 1.0614525139664806e-06,
+ 'rewards/chosen': -1.5899653434753418, 'rewards/rejected': -3.9651503562927246
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.37518525123596
+2, 'logps/rejected': -419.915283203125, 'logps/chosen': -548.289794921875, 'log
+its/rejected': -1.1015046834945679, 'logits/chosen': -1.0556849241256714, 'epoc
+h': 4.48}
+{'loss': 0.2426, 'grad_norm': 13.125, 'learning_rate': 1.0512950736414424e-06,
+'rewards/chosen': -1.8347488641738892, 'rewards/rejected': -4.734118461608887,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.899369716644287,
+'logps/rejected': -444.79071044921875, 'logps/chosen': -550.2904052734375, 'log
+its/rejected': -1.0528143644332886, 'logits/chosen': -1.0869691371917725, 'epoc
+h': 4.48}
+{'loss': 0.3502, 'grad_norm': 0.84375, 'learning_rate': 1.0411376333164044e-06,
+ 'rewards/chosen': -2.339616060256958, 'rewards/rejected': -5.023220539093018,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.6836044788360596, 'logps/reje
+cted': -442.31298828125, 'logps/chosen': -440.43218994140625, 'logits/rejected'
+: -1.1313247680664062, 'logits/chosen': -1.0837737321853638, 'epoch': 4.49}
+{'loss': 0.4245, 'grad_norm': 2.796875, 'learning_rate': 1.0309801929913662e-06
+, 'rewards/chosen': -2.234102964401245, 'rewards/rejected': -4.3681864738464355
+, 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.134083509445190
+4, 'logps/rejected': -365.8744812011719, 'logps/chosen': -465.1025390625, 'logi
+ts/rejected': -1.0746303796768188, 'logits/chosen': -1.2177191972732544, 'epoch
+': 4.49}
+{'loss': 0.3016, 'grad_norm': 5.59375, 'learning_rate': 1.0208227526663282e-06,
+ 'rewards/chosen': -2.1659817695617676, 'rewards/rejected': -4.3204827308654785
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.154501438140869
+, 'logps/rejected': -333.1734619140625, 'logps/chosen': -476.1646423339844, 'lo
+gits/rejected': -0.9997760653495789, 'logits/chosen': -1.168381690979004, 'epoc
+h': 4.5}
+{'loss': 0.3175, 'grad_norm': 2.90625, 'learning_rate': 1.01066531234129e-06, '
+rewards/chosen': -2.2063426971435547, 'rewards/rejected': -4.560105800628662, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.3537631034851074,
+ 'logps/rejected': -383.4048767089844, 'logps/chosen': -460.7666015625, 'logits
+/rejected': -1.092895269393921, 'logits/chosen': -1.1359083652496338, 'epoch':
+4.5}
+{'loss': 0.3019, 'grad_norm': 1.4765625, 'learning_rate': 1.000507872016252e-06
+, 'rewards/chosen': -1.8074945211410522, 'rewards/rejected': -4.50636100769043,
+ 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.698866367340088,
+ 'logps/rejected': -429.06915283203125, 'logps/chosen': -537.9478759765625, 'lo
+gits/rejected': -1.0054240226745605, 'logits/chosen': -1.060595154762268, 'epoc
+h': 4.51}
+{'loss': 0.3231, 'grad_norm': 3.78125, 'learning_rate': 9.90350431691214e-07, '
+rewards/chosen': -1.9099318981170654, 'rewards/rejected': -4.385266304016113, '
+rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.4753341674804688,
+'logps/rejected': -436.3155822753906, 'logps/chosen': -518.3126220703125, 'logi
+ts/rejected': -1.096946120262146, 'logits/chosen': -1.1442797183990479, 'epoch'
+: 4.51}
+{'loss': 0.1796, 'grad_norm': 2.4375, 'learning_rate': 9.801929913661758e-07, '
+rewards/chosen': -1.631978988647461, 'rewards/rejected': -4.721790313720703, 'r
+ewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.089810848236084, '
+logps/rejected': -377.1932067871094, 'logps/chosen': -515.5016479492188, 'logit
+s/rejected': -1.0711995363235474, 'logits/chosen': -1.1912215948104858, 'epoch'
+: 4.52}
+{'loss': 0.307, 'grad_norm': 9.3125, 'learning_rate': 9.700355510411378e-07, 'r
+ewards/chosen': -1.9856197834014893, 'rewards/rejected': -4.5302228927612305, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.544602632522583,
+'logps/rejected': -359.8125915527344, 'logps/chosen': -413.0775451660156, 'logi
+ts/rejected': -1.0611181259155273, 'logits/chosen': -1.2378175258636475, 'epoch
+': 4.52}
+{'loss': 0.1996, 'grad_norm': 5.8125, 'learning_rate': 9.598781107160998e-07, '
+rewards/chosen': -1.5860258340835571, 'rewards/rejected': -4.360050201416016, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.77402400970459, 'logps/rejecte
+d': -404.25994873046875, 'logps/chosen': -514.8377685546875, 'logits/rejected':
+ -1.1290860176086426, 'logits/chosen': -1.1879061460494995, 'epoch': 4.53}
+{'loss': 0.3362, 'grad_norm': 8.0625, 'learning_rate': 9.497206703910615e-07, '
+rewards/chosen': -1.8269414901733398, 'rewards/rejected': -4.499810695648193, '
+rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.6728692054748535,
+'logps/rejected': -423.25775146484375, 'logps/chosen': -514.5611572265625, 'log
+its/rejected': -1.0831488370895386, 'logits/chosen': -1.0865002870559692, 'epoc
+h': 4.53}
+{'loss': 0.1821, 'grad_norm': 2.078125, 'learning_rate': 9.395632300660235e-07,
+ 'rewards/chosen': -1.5450085401535034, 'rewards/rejected': -3.861694812774658,
+ 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.3166866302490234
+, 'logps/rejected': -262.30352783203125, 'logps/chosen': -361.1895446777344, 'l
+ogits/rejected': -0.9626989364624023, 'logits/chosen': -0.9594732522964478, 'ep
+och': 4.54}
+{'loss': 0.1778, 'grad_norm': 4.96875, 'learning_rate': 9.294057897409855e-07,
+'rewards/chosen': -1.915258765220642, 'rewards/rejected': -5.107633590698242, '
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.1923744678497314,
+'logps/rejected': -355.25982666015625, 'logps/chosen': -520.263427734375, 'logi
+ts/rejected': -1.0870978832244873, 'logits/chosen': -1.1191086769104004, 'epoch
+': 4.54}
+{'loss': 0.3741, 'grad_norm': 2.625, 'learning_rate': 9.192483494159473e-07, 'r
+ewards/chosen': -2.0739924907684326, 'rewards/rejected': -3.971611738204956, 'r
+ewards/accuracies': 0.800000011920929, 'rewards/margins': 1.8976188898086548, '
+logps/rejected': -431.0210876464844, 'logps/chosen': -429.97125244140625, 'logi
+ts/rejected': -1.1049129962921143, 'logits/chosen': -1.0708253383636475, 'epoch
+': 4.55}
+{'loss': 0.1897, 'grad_norm': 4.71875, 'learning_rate': 9.090909090909091e-07,
+'rewards/chosen': -1.7027206420898438, 'rewards/rejected': -4.2525177001953125,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.549797773361206,
+ 'logps/rejected': -381.92413330078125, 'logps/chosen': -462.38323974609375, 'l
+ogits/rejected': -1.1635090112686157, 'logits/chosen': -1.2560429573059082, 'ep
+och': 4.55}
+{'loss': 0.3719, 'grad_norm': 0.578125, 'learning_rate': 8.98933468765871e-07,
+'rewards/chosen': -2.127796173095703, 'rewards/rejected': -4.465664863586426, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.3378684520721436, 'logps/rejec
+ted': -336.82000732421875, 'logps/chosen': -501.1974182128906, 'logits/rejected
+': -0.9195151329040527, 'logits/chosen': -1.1752487421035767, 'epoch': 4.56}
+{'loss': 0.3377, 'grad_norm': 1.1015625, 'learning_rate': 8.887760284408329e-07
+, 'rewards/chosen': -1.9238933324813843, 'rewards/rejected': -4.56896448135376,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.645071268081665,
+ 'logps/rejected': -393.18402099609375, 'logps/chosen': -457.47601318359375, 'l
+ogits/rejected': -1.0890865325927734, 'logits/chosen': -0.9922398328781128, 'ep
+och': 4.56}
+{'loss': 0.2657, 'grad_norm': 2.609375, 'learning_rate': 8.786185881157949e-07,
+ 'rewards/chosen': -1.9901189804077148, 'rewards/rejected': -4.484652042388916,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.494533061981201
+, 'logps/rejected': -362.1372985839844, 'logps/chosen': -483.7208557128906, 'lo
+gits/rejected': -1.0323898792266846, 'logits/chosen': -1.0918223857879639, 'epo
+ch': 4.57}
+{'loss': 0.209, 'grad_norm': 6.34375, 'learning_rate': 8.684611477907567e-07, '
+rewards/chosen': -1.9763526916503906, 'rewards/rejected': -4.469976902008057, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.493623971939087,
+'logps/rejected': -401.86181640625, 'logps/chosen': -459.29437255859375, 'logit
+s/rejected': -1.031949758529663, 'logits/chosen': -1.1519310474395752, 'epoch':
+ 4.57}
+{'loss': 0.1592, 'grad_norm': 0.50390625, 'learning_rate': 8.583037074657187e-0
+7, 'rewards/chosen': -1.9928992986679077, 'rewards/rejected': -5.10885953903198
+2, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.11596012115478
+5, 'logps/rejected': -369.2129211425781, 'logps/chosen': -431.60980224609375, '
+logits/rejected': -1.1178516149520874, 'logits/chosen': -0.9991133809089661, 'e
+poch': 4.58}
+{'loss': 0.3567, 'grad_norm': 0.99609375, 'learning_rate': 8.481462671406806e-0
+7, 'rewards/chosen': -2.1443097591400146, 'rewards/rejected': -4.46633911132812
+5, 'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.3220298290252
+686, 'logps/rejected': -330.65301513671875, 'logps/chosen': -441.20361328125, '
+logits/rejected': -1.0929063558578491, 'logits/chosen': -0.9974877238273621, 'e
+poch': 4.58}
+{'loss': 0.2044, 'grad_norm': 5.84375, 'learning_rate': 8.379888268156425e-07,
+'rewards/chosen': -1.8008886575698853, 'rewards/rejected': -4.644524574279785,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.8436360359191895
+, 'logps/rejected': -395.64898681640625, 'logps/chosen': -496.7215881347656, 'l
+ogits/rejected': -0.969598650932312, 'logits/chosen': -1.0721524953842163, 'epo
+ch': 4.59}
+{'loss': 0.1926, 'grad_norm': 3.0625, 'learning_rate': 8.278313864906044e-07, '
+rewards/chosen': -1.763077735900879, 'rewards/rejected': -5.050873756408691, 'r
+ewards/accuracies': 0.925000011920929, 'rewards/margins': 3.2877955436706543, '
+logps/rejected': -389.5523986816406, 'logps/chosen': -553.0438232421875, 'logit
+s/rejected': -1.1240962743759155, 'logits/chosen': -1.1887805461883545, 'epoch'
+: 4.59}
+{'loss': 0.2188, 'grad_norm': 2.1875, 'learning_rate': 8.176739461655664e-07, '
+rewards/chosen': -2.3516693115234375, 'rewards/rejected': -4.997998237609863, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.6463284492492676, 'logps/rejec
+ted': -388.64239501953125, 'logps/chosen': -490.76226806640625, 'logits/rejecte
+d': -1.0906084775924683, 'logits/chosen': -1.134307622909546, 'epoch': 4.6}
+{'loss': 0.1561, 'grad_norm': 2.8125, 'learning_rate': 8.075165058405282e-07, '
+rewards/chosen': -1.8511565923690796, 'rewards/rejected': -5.001552104949951, '
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.150395393371582, '
+logps/rejected': -346.08306884765625, 'logps/chosen': -451.7008361816406, 'logi
+ts/rejected': -1.0272859334945679, 'logits/chosen': -1.1560853719711304, 'epoch
+': 4.6}
+{'loss': 0.3443, 'grad_norm': 5.4375, 'learning_rate': 7.973590655154902e-07, '
+rewards/chosen': -1.9949756860733032, 'rewards/rejected': -4.846797943115234, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.8518218994140625,
+ 'logps/rejected': -336.9641418457031, 'logps/chosen': -429.34112548828125, 'lo
+gits/rejected': -1.1070103645324707, 'logits/chosen': -1.1439692974090576, 'epo
+ch': 4.61}
+{'loss': 0.3115, 'grad_norm': 5.71875, 'learning_rate': 7.872016251904521e-07,
+'rewards/chosen': -1.9468622207641602, 'rewards/rejected': -4.392764091491699,
+'rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.445902109146118,
+ 'logps/rejected': -366.3505859375, 'logps/chosen': -353.8129577636719, 'logits
+/rejected': -1.1069585084915161, 'logits/chosen': -1.102906346321106, 'epoch':
+4.61}
+{'loss': 0.2531, 'grad_norm': 4.5625, 'learning_rate': 7.770441848654139e-07, '
+rewards/chosen': -1.7695000171661377, 'rewards/rejected': -4.137781143188477, '
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.368281126022339, '
+logps/rejected': -397.47808837890625, 'logps/chosen': -438.2706604003906, 'logi
+ts/rejected': -1.067793607711792, 'logits/chosen': -1.1472582817077637, 'epoch'
+: 4.62}
+{'loss': 0.2024, 'grad_norm': 1.6875, 'learning_rate': 7.668867445403759e-07, '
+rewards/chosen': -1.822217583656311, 'rewards/rejected': -4.285037040710449, 'r
+ewards/accuracies': 0.949999988079071, 'rewards/margins': 2.4628193378448486, '
+logps/rejected': -371.42218017578125, 'logps/chosen': -432.0603942871094, 'logi
+ts/rejected': -1.0704030990600586, 'logits/chosen': -1.2014631032943726, 'epoch
+': 4.62}
+{'loss': 0.4069, 'grad_norm': 2.140625, 'learning_rate': 7.567293042153379e-07,
+ 'rewards/chosen': -2.0376040935516357, 'rewards/rejected': -3.994424343109131,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 1.9568202495574951, 'logps/rej
+ected': -323.6011962890625, 'logps/chosen': -371.1627197265625, 'logits/rejecte
+d': -1.105650544166565, 'logits/chosen': -1.1681588888168335, 'epoch': 4.63}
+{'loss': 0.2425, 'grad_norm': 0.7109375, 'learning_rate': 7.465718638902997e-07
+, 'rewards/chosen': -2.0826210975646973, 'rewards/rejected': -4.491008758544922
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.408387660980224
+6, 'logps/rejected': -420.122314453125, 'logps/chosen': -464.37847900390625, 'l
+ogits/rejected': -1.1598056554794312, 'logits/chosen': -1.0698719024658203, 'ep
+och': 4.63}
+{'loss': 0.2871, 'grad_norm': 3.8125, 'learning_rate': 7.364144235652617e-07, '
+rewards/chosen': -2.0958328247070312, 'rewards/rejected': -4.813305854797363, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.7174735069274902,
+ 'logps/rejected': -493.7886657714844, 'logps/chosen': -643.7610473632812, 'log
+its/rejected': -0.9590222239494324, 'logits/chosen': -0.990606427192688, 'epoch
+': 4.64}
+{'loss': 0.1814, 'grad_norm': 1.0, 'learning_rate': 7.262569832402236e-07, 'rew
+ards/chosen': -1.6785991191864014, 'rewards/rejected': -4.557992458343506, 'rew
+ards/accuracies': 0.925000011920929, 'rewards/margins': 2.8793938159942627, 'lo
+gps/rejected': -379.3420104980469, 'logps/chosen': -550.2823486328125, 'logits/
+rejected': -1.0767053365707397, 'logits/chosen': -1.1007999181747437, 'epoch':
+4.64}
+{'loss': 0.279, 'grad_norm': 3.453125, 'learning_rate': 7.160995429151854e-07,
+'rewards/chosen': -2.021177053451538, 'rewards/rejected': -4.254034996032715, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.232858180999756,
+'logps/rejected': -345.7617492675781, 'logps/chosen': -432.2046813964844, 'logi
+ts/rejected': -1.2267669439315796, 'logits/chosen': -1.2199680805206299, 'epoch
+': 4.65}
+{'loss': 0.3181, 'grad_norm': 0.71875, 'learning_rate': 7.059421025901474e-07,
+'rewards/chosen': -1.7115055322647095, 'rewards/rejected': -4.264559268951416,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.553053617477417, 'logps/rejec
+ted': -404.83514404296875, 'logps/chosen': -522.586669921875, 'logits/rejected'
+: -1.047480583190918, 'logits/chosen': -1.0421721935272217, 'epoch': 4.65}
+{'loss': 0.3164, 'grad_norm': 4.3125, 'learning_rate': 6.957846622651092e-07, '
+rewards/chosen': -2.211911201477051, 'rewards/rejected': -4.216141700744629, 'r
+ewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.004229784011841, '
+logps/rejected': -364.6343688964844, 'logps/chosen': -470.322998046875, 'logits
+/rejected': -1.1407921314239502, 'logits/chosen': -1.1517553329467773, 'epoch':
+ 4.66}
+{'loss': 0.2123, 'grad_norm': 2.46875, 'learning_rate': 6.856272219400712e-07,
+'rewards/chosen': -1.8610109090805054, 'rewards/rejected': -4.714116096496582,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.853105306625366,
+'logps/rejected': -334.032958984375, 'logps/chosen': -485.66546630859375, 'logi
+ts/rejected': -1.0514554977416992, 'logits/chosen': -1.0527069568634033, 'epoch
+': 4.66}
+{'loss': 0.228, 'grad_norm': 0.87109375, 'learning_rate': 6.754697816150331e-07
+, 'rewards/chosen': -1.8621625900268555, 'rewards/rejected': -4.346259117126465
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.4840962886810303, 'logps/re
+jected': -371.38385009765625, 'logps/chosen': -490.36676025390625, 'logits/reje
+cted': -1.062963843345642, 'logits/chosen': -1.2352626323699951, 'epoch': 4.67}
+{'loss': 0.3513, 'grad_norm': 4.71875, 'learning_rate': 6.65312341289995e-07, '
+rewards/chosen': -1.9010231494903564, 'rewards/rejected': -4.2418975830078125,
+'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 2.3408749103546143
+, 'logps/rejected': -410.3887634277344, 'logps/chosen': -525.1326904296875, 'lo
+gits/rejected': -1.267472505569458, 'logits/chosen': -1.2188197374343872, 'epoc
+h': 4.67}
+{'loss': 0.2354, 'grad_norm': 3.15625, 'learning_rate': 6.551549009649568e-07,
+'rewards/chosen': -1.7060420513153076, 'rewards/rejected': -3.8705146312713623,
+ 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.164472818374634,
+ 'logps/rejected': -415.14556884765625, 'logps/chosen': -477.8466796875, 'logit
+s/rejected': -1.1071090698242188, 'logits/chosen': -1.047371506690979, 'epoch':
+ 4.68}
+{'loss': 0.2017, 'grad_norm': 1.7109375, 'learning_rate': 6.449974606399188e-07
+, 'rewards/chosen': -1.6990000009536743, 'rewards/rejected': -4.203073501586914
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.50407361984252
+93, 'logps/rejected': -340.51422119140625, 'logps/chosen': -497.052734375, 'log
+its/rejected': -1.1386326551437378, 'logits/chosen': -1.2567464113235474, 'epoc
+h': 4.68}
+{'loss': 0.2274, 'grad_norm': 7.15625, 'learning_rate': 6.348400203148806e-07,
+'rewards/chosen': -2.2413790225982666, 'rewards/rejected': -4.48615837097168, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.244779348373413,
+'logps/rejected': -352.83172607421875, 'logps/chosen': -575.4520263671875, 'log
+its/rejected': -1.0928291082382202, 'logits/chosen': -1.2613719701766968, 'epoc
+h': 4.69}
+{'loss': 0.1703, 'grad_norm': 2.234375, 'learning_rate': 6.246825799898426e-07,
+ 'rewards/chosen': -1.9986155033111572, 'rewards/rejected': -4.796298027038574,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.797681808471679
+7, 'logps/rejected': -400.75860595703125, 'logps/chosen': -528.8687133789062, '
+logits/rejected': -1.0907660722732544, 'logits/chosen': -1.072914481163025, 'ep
+och': 4.69}
+{'loss': 0.1851, 'grad_norm': 9.8125, 'learning_rate': 6.145251396648045e-07, '
+rewards/chosen': -1.7952396869659424, 'rewards/rejected': -4.472007751464844, '
+rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.6767680644989014,
+ 'logps/rejected': -414.3656311035156, 'logps/chosen': -497.6884765625, 'logits
+/rejected': -1.1398321390151978, 'logits/chosen': -1.1810643672943115, 'epoch':
+ 4.7}
+{'loss': 0.1837, 'grad_norm': 2.640625, 'learning_rate': 6.043676993397664e-07,
+ 'rewards/chosen': -2.088660717010498, 'rewards/rejected': -5.091449737548828,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.002789258956909,
+ 'logps/rejected': -323.18511962890625, 'logps/chosen': -407.19354248046875, 'l
+ogits/rejected': -1.087816834449768, 'logits/chosen': -1.1575857400894165, 'epo
+ch': 4.7}
+{'loss': 0.1844, 'grad_norm': 5.78125, 'learning_rate': 5.942102590147283e-07,
+'rewards/chosen': -1.7881319522857666, 'rewards/rejected': -4.611193656921387,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.823061943054199,
+'logps/rejected': -336.5474548339844, 'logps/chosen': -488.49609375, 'logits/re
+jected': -1.1656036376953125, 'logits/chosen': -1.153443694114685, 'epoch': 4.7
+1}
+{'loss': 0.2771, 'grad_norm': 2.75, 'learning_rate': 5.840528186896902e-07, 're
+wards/chosen': -2.1754801273345947, 'rewards/rejected': -4.642789840698242, 're
+wards/accuracies': 0.8999999761581421, 'rewards/margins': 2.4673094749450684, '
+logps/rejected': -449.63983154296875, 'logps/chosen': -567.604736328125, 'logit
+s/rejected': -1.1265380382537842, 'logits/chosen': -1.1412465572357178, 'epoch'
+: 4.71}
+{'loss': 0.372, 'grad_norm': 9.375, 'learning_rate': 5.738953783646522e-07, 're
+wards/chosen': -2.0608434677124023, 'rewards/rejected': -4.443017482757568, 're
+wards/accuracies': 0.824999988079071, 'rewards/margins': 2.382174015045166, 'lo
+gps/rejected': -452.86224365234375, 'logps/chosen': -492.64996337890625, 'logit
+s/rejected': -1.141270399093628, 'logits/chosen': -1.1319711208343506, 'epoch':
+ 4.72}
+{'loss': 0.1912, 'grad_norm': 0.70703125, 'learning_rate': 5.637379380396141e-0
+7, 'rewards/chosen': -1.5194342136383057, 'rewards/rejected': -4.05531597137451
+2, 'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.53588199615478
+5, 'logps/rejected': -382.1986083984375, 'logps/chosen': -552.9343872070312, 'l
+ogits/rejected': -1.056336760520935, 'logits/chosen': -1.167664885520935, 'epoc
+h': 4.72}
+{'loss': 0.3452, 'grad_norm': 4.65625, 'learning_rate': 5.53580497714576e-07, '
+rewards/chosen': -1.9339635372161865, 'rewards/rejected': -4.227051258087158, '
+rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.2930874824523926,
+'logps/rejected': -438.52301025390625, 'logps/chosen': -422.515625, 'logits/rej
+ected': -0.9838007092475891, 'logits/chosen': -0.9950923919677734, 'epoch': 4.7
+3}
+{'loss': 0.3626, 'grad_norm': 0.87109375, 'learning_rate': 5.434230573895378e-0
+7, 'rewards/chosen': -2.020425319671631, 'rewards/rejected': -4.838963985443115
+, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.81853818893432
+6, 'logps/rejected': -494.1128845214844, 'logps/chosen': -689.1082763671875, 'l
+ogits/rejected': -1.238364815711975, 'logits/chosen': -1.2983362674713135, 'epo
+ch': 4.73}
+{'loss': 0.3321, 'grad_norm': 6.84375, 'learning_rate': 5.332656170644998e-07,
+'rewards/chosen': -2.0989933013916016, 'rewards/rejected': -4.612638473510742,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.513645648956299,
+ 'logps/rejected': -439.2291564941406, 'logps/chosen': -485.17413330078125, 'lo
+gits/rejected': -1.055772066116333, 'logits/chosen': -1.0503331422805786, 'epoc
+h': 4.74}
+{'loss': 0.1646, 'grad_norm': 10.0625, 'learning_rate': 5.231081767394617e-07,
+'rewards/chosen': -1.8243639469146729, 'rewards/rejected': -4.521689414978027,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.6973252296447754,
+ 'logps/rejected': -360.3740234375, 'logps/chosen': -394.4144287109375, 'logits
+/rejected': -1.0433554649353027, 'logits/chosen': -1.0511473417282104, 'epoch':
+ 4.74}
+{'loss': 0.2334, 'grad_norm': 1.84375, 'learning_rate': 5.129507364144236e-07,
+'rewards/chosen': -2.2086374759674072, 'rewards/rejected': -4.97645378112793, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.7678160667419434, 'logps/rejec
+ted': -399.4996032714844, 'logps/chosen': -555.5760498046875, 'logits/rejected'
+: -1.0418200492858887, 'logits/chosen': -1.0962873697280884, 'epoch': 4.75}
+{'loss': 0.1799, 'grad_norm': 7.96875, 'learning_rate': 5.027932960893855e-07,
+'rewards/chosen': -1.6507694721221924, 'rewards/rejected': -4.369126319885254,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.7183568477630615,
+ 'logps/rejected': -398.2066955566406, 'logps/chosen': -466.6263732910156, 'log
+its/rejected': -1.076879858970642, 'logits/chosen': -1.0782697200775146, 'epoch
+': 4.75}
+{'loss': 0.2672, 'grad_norm': 5.125, 'learning_rate': 4.926358557643474e-07, 'r
+ewards/chosen': -1.8829305171966553, 'rewards/rejected': -4.284682273864746, 'r
+ewards/accuracies': 0.925000011920929, 'rewards/margins': 2.4017512798309326, '
+logps/rejected': -333.0033264160156, 'logps/chosen': -427.0030212402344, 'logit
+s/rejected': -1.1666538715362549, 'logits/chosen': -1.1859004497528076, 'epoch'
+: 4.76}
+{'loss': 0.214, 'grad_norm': 2.609375, 'learning_rate': 4.824784154393093e-07,
+'rewards/chosen': -2.409473419189453, 'rewards/rejected': -4.8532819747924805,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.443808078765869,
+ 'logps/rejected': -390.4580078125, 'logps/chosen': -407.99127197265625, 'logit
+s/rejected': -1.0664705038070679, 'logits/chosen': -1.137934923171997, 'epoch':
+ 4.76}
+{'loss': 0.2095, 'grad_norm': 5.65625, 'learning_rate': 4.723209751142713e-07,
+'rewards/chosen': -1.7155195474624634, 'rewards/rejected': -4.6412177085876465,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.925698280334472
+7, 'logps/rejected': -364.70562744140625, 'logps/chosen': -467.177734375, 'logi
+ts/rejected': -0.9962250590324402, 'logits/chosen': -1.1067651510238647, 'epoch
+': 4.77}
+{'loss': 0.1801, 'grad_norm': 6.15625, 'learning_rate': 4.621635347892332e-07,
+'rewards/chosen': -1.911237359046936, 'rewards/rejected': -4.7530293464660645,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.841791868209839,
+ 'logps/rejected': -402.0498962402344, 'logps/chosen': -581.2108764648438, 'log
+its/rejected': -0.9998629689216614, 'logits/chosen': -1.1533796787261963, 'epoc
+h': 4.77}
+{'loss': 0.2156, 'grad_norm': 2.3125, 'learning_rate': 4.5200609446419507e-07,
+'rewards/chosen': -1.8500492572784424, 'rewards/rejected': -4.735357284545898,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.885308027267456,
+'logps/rejected': -448.05926513671875, 'logps/chosen': -476.6507873535156, 'log
+its/rejected': -0.9617341160774231, 'logits/chosen': -1.0130224227905273, 'epoc
+h': 4.78}
+{'loss': 0.2661, 'grad_norm': 5.09375, 'learning_rate': 4.418486541391569e-07,
+'rewards/chosen': -2.4919090270996094, 'rewards/rejected': -5.040857791900635,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.5489485263824463,
+ 'logps/rejected': -508.61260986328125, 'logps/chosen': -457.24609375, 'logits/
+rejected': -1.1713435649871826, 'logits/chosen': -1.117537260055542, 'epoch': 4
+.78}
+{'loss': 0.4822, 'grad_norm': 0.400390625, 'learning_rate': 4.316912138141189e-
+07, 'rewards/chosen': -1.9251041412353516, 'rewards/rejected': -4.0196595191955
+57, 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 2.0945553779602
+05, 'logps/rejected': -371.19134521484375, 'logps/chosen': -488.4639587402344,
+'logits/rejected': -1.1189074516296387, 'logits/chosen': -1.1977967023849487, '
+epoch': 4.79}
+{'loss': 0.2847, 'grad_norm': 2.03125, 'learning_rate': 4.2153377348908076e-07,
+ 'rewards/chosen': -2.072634696960449, 'rewards/rejected': -4.580223560333252,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.507589101791382, 'logps/rejec
+ted': -407.9668273925781, 'logps/chosen': -508.97528076171875, 'logits/rejected
+': -1.2709705829620361, 'logits/chosen': -1.2342020273208618, 'epoch': 4.79}
+{'loss': 0.2226, 'grad_norm': 0.89453125, 'learning_rate': 4.1137633316404265e-
+07, 'rewards/chosen': -1.7839435338974, 'rewards/rejected': -4.938591003417969,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.1546471118927,
+'logps/rejected': -353.5147399902344, 'logps/chosen': -472.90032958984375, 'log
+its/rejected': -0.9480103254318237, 'logits/chosen': -1.0688625574111938, 'epoc
+h': 4.8}
+{'loss': 0.2634, 'grad_norm': 2.921875, 'learning_rate': 4.012188928390046e-07,
+ 'rewards/chosen': -2.018690347671509, 'rewards/rejected': -4.086211204528809,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.0675206184387207, 'logps/reje
+cted': -407.09002685546875, 'logps/chosen': -527.488037109375, 'logits/rejected
+': -1.1848416328430176, 'logits/chosen': -1.2107057571411133, 'epoch': 4.8}
+{'loss': 0.1427, 'grad_norm': 5.8125, 'learning_rate': 3.910614525139665e-07, '
+rewards/chosen': -1.8531337976455688, 'rewards/rejected': -5.209810733795166, '
+rewards/accuracies': 0.9750000238418579, 'rewards/margins': 3.356677293777466,
+'logps/rejected': -381.51324462890625, 'logps/chosen': -504.7897033691406, 'log
+its/rejected': -1.0648398399353027, 'logits/chosen': -1.1103559732437134, 'epoc
+h': 4.81}
+{'loss': 0.103, 'grad_norm': 2.90625, 'learning_rate': 3.809040121889284e-07, '
+rewards/chosen': -1.7630077600479126, 'rewards/rejected': -4.873968601226807, '
+rewards/accuracies': 1.0, 'rewards/margins': 3.1109604835510254, 'logps/rejecte
+d': -377.02667236328125, 'logps/chosen': -576.4627685546875, 'logits/rejected':
+ -1.1690380573272705, 'logits/chosen': -1.1933879852294922, 'epoch': 4.81}
+{'loss': 0.2911, 'grad_norm': 1.9140625, 'learning_rate': 3.7074657186389034e-0
+7, 'rewards/chosen': -1.7761653661727905, 'rewards/rejected': -3.93747711181640
+62, 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.1613116264343
+26, 'logps/rejected': -333.771728515625, 'logps/chosen': -485.70501708984375, '
+logits/rejected': -1.112929344177246, 'logits/chosen': -1.142948865890503, 'epo
+ch': 4.82}
+{'loss': 0.1229, 'grad_norm': 1.46875, 'learning_rate': 3.6058913153885224e-07,
+ 'rewards/chosen': -1.367238998413086, 'rewards/rejected': -4.437008380889893,
+'rewards/accuracies': 0.949999988079071, 'rewards/margins': 3.0697696208953857,
+ 'logps/rejected': -392.0621032714844, 'logps/chosen': -566.0465087890625, 'log
+its/rejected': -1.1259031295776367, 'logits/chosen': -1.131844401359558, 'epoch
+': 4.82}
+{'loss': 0.2083, 'grad_norm': 1.3671875, 'learning_rate': 3.5043169121381413e-0
+7, 'rewards/chosen': -1.8347454071044922, 'rewards/rejected': -4.97373247146606
+45, 'rewards/accuracies': 0.875, 'rewards/margins': 3.1389870643615723, 'logps/
+rejected': -549.3983154296875, 'logps/chosen': -610.6444702148438, 'logits/reje
+cted': -1.11770761013031, 'logits/chosen': -1.1431220769882202, 'epoch': 4.83}
+{'loss': 0.2214, 'grad_norm': 1.2734375, 'learning_rate': 3.4027425088877603e-0
+7, 'rewards/chosen': -1.9053089618682861, 'rewards/rejected': -4.34421491622924
+8, 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.4389057159423
+83, 'logps/rejected': -433.99493408203125, 'logps/chosen': -517.16162109375, 'l
+ogits/rejected': -1.2556350231170654, 'logits/chosen': -1.248783826828003, 'epo
+ch': 4.83}
+{'loss': 0.2596, 'grad_norm': 16.5, 'learning_rate': 3.30116810563738e-07, 'rew
+ards/chosen': -1.8972969055175781, 'rewards/rejected': -4.6621856689453125, 're
+wards/accuracies': 0.8999999761581421, 'rewards/margins': 2.764888286590576, 'l
+ogps/rejected': -361.18572998046875, 'logps/chosen': -479.19232177734375, 'logi
+ts/rejected': -1.0608546733856201, 'logits/chosen': -1.1604597568511963, 'epoch
+': 4.84}
+{'loss': 0.1807, 'grad_norm': 3.4375, 'learning_rate': 3.1995937023869987e-07,
+'rewards/chosen': -1.985833764076233, 'rewards/rejected': -4.866814613342285, '
+rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.880981206893921, '
+logps/rejected': -387.8058776855469, 'logps/chosen': -515.96337890625, 'logits/
+rejected': -1.0711902379989624, 'logits/chosen': -1.1510961055755615, 'epoch':
+4.84}
+{'loss': 0.3555, 'grad_norm': 2.796875, 'learning_rate': 3.0980192991366177e-07
+, 'rewards/chosen': -2.2513632774353027, 'rewards/rejected': -4.573903083801269
+5, 'rewards/accuracies': 0.875, 'rewards/margins': 2.322539806365967, 'logps/re
+jected': -409.88671875, 'logps/chosen': -485.645263671875, 'logits/rejected': -
+1.1335008144378662, 'logits/chosen': -1.1680480241775513, 'epoch': 4.85}
+{'loss': 0.4078, 'grad_norm': 6.28125, 'learning_rate': 2.9964448958862366e-07,
+ 'rewards/chosen': -2.3405115604400635, 'rewards/rejected': -4.347670078277588,
+ 'rewards/accuracies': 0.824999988079071, 'rewards/margins': 2.0071587562561035
+, 'logps/rejected': -383.2010498046875, 'logps/chosen': -557.542724609375, 'log
+its/rejected': -1.1439054012298584, 'logits/chosen': -1.1013867855072021, 'epoc
+h': 4.85}
+{'loss': 0.1782, 'grad_norm': 2.625, 'learning_rate': 2.894870492635856e-07, 'r
+ewards/chosen': -2.215324640274048, 'rewards/rejected': -5.044157981872559, 're
+wards/accuracies': 0.925000011920929, 'rewards/margins': 2.82883358001709, 'log
+ps/rejected': -476.14276123046875, 'logps/chosen': -559.4964599609375, 'logits/
+rejected': -1.1396777629852295, 'logits/chosen': -1.228658676147461, 'epoch': 4
+.86}
+{'loss': 0.2204, 'grad_norm': 3.359375, 'learning_rate': 2.793296089385475e-07,
+ 'rewards/chosen': -1.857745885848999, 'rewards/rejected': -4.83779764175415, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.980051279067993, 'logps/reject
+ed': -413.59735107421875, 'logps/chosen': -519.8497314453125, 'logits/rejected'
+: -1.1686955690383911, 'logits/chosen': -1.1262898445129395, 'epoch': 4.86}
+{'loss': 0.1829, 'grad_norm': 1.6328125, 'learning_rate': 2.691721686135094e-07
+, 'rewards/chosen': -1.887251615524292, 'rewards/rejected': -4.493372917175293,
+ 'rewards/accuracies': 0.9750000238418579, 'rewards/margins': 2.606121063232422
+, 'logps/rejected': -365.84912109375, 'logps/chosen': -407.84735107421875, 'log
+its/rejected': -1.0105167627334595, 'logits/chosen': -1.139040231704712, 'epoch
+': 4.87}
+{'loss': 0.3167, 'grad_norm': 5.5625, 'learning_rate': 2.5901472828847135e-07,
+'rewards/chosen': -2.1336278915405273, 'rewards/rejected': -4.40031099319458, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.2666831016540527, 'logps/rejec
+ted': -449.31219482421875, 'logps/chosen': -540.9740600585938, 'logits/rejected
+': -1.0200786590576172, 'logits/chosen': -1.1621811389923096, 'epoch': 4.87}
+{'loss': 0.2446, 'grad_norm': 4.84375, 'learning_rate': 2.4885728796343325e-07,
+ 'rewards/chosen': -1.8942549228668213, 'rewards/rejected': -4.41209077835083,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.517836093902588,
+'logps/rejected': -283.943115234375, 'logps/chosen': -390.5724182128906, 'logit
+s/rejected': -1.0678796768188477, 'logits/chosen': -1.1685837507247925, 'epoch'
+: 4.88}
+{'loss': 0.2744, 'grad_norm': 9.4375, 'learning_rate': 2.3869984763839514e-07,
+'rewards/chosen': -1.9545469284057617, 'rewards/rejected': -4.5005998611450195,
+ 'rewards/accuracies': 0.875, 'rewards/margins': 2.546053409576416, 'logps/reje
+cted': -386.4336853027344, 'logps/chosen': -416.9129333496094, 'logits/rejected
+': -0.9881353378295898, 'logits/chosen': -0.9868255853652954, 'epoch': 4.88}
+{'loss': 0.385, 'grad_norm': 1.9453125, 'learning_rate': 2.2854240731335704e-07
+, 'rewards/chosen': -1.9227025508880615, 'rewards/rejected': -4.209262847900391
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.2865607738494873, 'logps/re
+jected': -335.28997802734375, 'logps/chosen': -447.91778564453125, 'logits/reje
+cted': -0.9741113781929016, 'logits/chosen': -0.9549252390861511, 'epoch': 4.89
+}
+{'loss': 0.2607, 'grad_norm': 3.234375, 'learning_rate': 2.1838496698831896e-07
+, 'rewards/chosen': -1.7916208505630493, 'rewards/rejected': -4.650683403015137
+, 'rewards/accuracies': 0.875, 'rewards/margins': 2.859062910079956, 'logps/rej
+ected': -350.20025634765625, 'logps/chosen': -416.5748596191406, 'logits/reject
+ed': -1.085777997970581, 'logits/chosen': -1.1587777137756348, 'epoch': 4.89}
+{'loss': 0.2633, 'grad_norm': 4.46875, 'learning_rate': 2.0822752666328088e-07,
+ 'rewards/chosen': -2.180068254470825, 'rewards/rejected': -4.887063026428223,
+'rewards/accuracies': 0.875, 'rewards/margins': 2.7069950103759766, 'logps/reje
+cted': -412.8046875, 'logps/chosen': -422.22161865234375, 'logits/rejected': -1
+.0460764169692993, 'logits/chosen': -1.025118112564087, 'epoch': 4.9}
+{'loss': 0.2162, 'grad_norm': 2.171875, 'learning_rate': 1.9807008633824278e-07
+, 'rewards/chosen': -2.054589033126831, 'rewards/rejected': -4.703297138214111,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.648708105087280
+3, 'logps/rejected': -305.28668212890625, 'logps/chosen': -430.6202087402344, '
+logits/rejected': -1.1158595085144043, 'logits/chosen': -1.181316614151001, 'ep
+och': 4.9}
+{'loss': 0.1966, 'grad_norm': 1.203125, 'learning_rate': 1.879126460132047e-07,
+ 'rewards/chosen': -1.7421821355819702, 'rewards/rejected': -4.541398048400879,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.799215793609619
+, 'logps/rejected': -431.76275634765625, 'logps/chosen': -547.3717041015625, 'l
+ogits/rejected': -1.0311082601547241, 'logits/chosen': -1.1060152053833008, 'ep
+och': 4.91}
+{'loss': 0.364, 'grad_norm': 4.125, 'learning_rate': 1.7775520568816657e-07, 'r
+ewards/chosen': -2.2787208557128906, 'rewards/rejected': -4.419316291809082, 'r
+ewards/accuracies': 0.824999988079071, 'rewards/margins': 2.1405951976776123, '
+logps/rejected': -371.5800476074219, 'logps/chosen': -456.322509765625, 'logits
+/rejected': -1.029320240020752, 'logits/chosen': -1.02798593044281, 'epoch': 4.
+91}
+{'loss': 0.1907, 'grad_norm': 1.3828125, 'learning_rate': 1.6759776536312851e-0
+7, 'rewards/chosen': -1.6495497226715088, 'rewards/rejected': -4.24749755859375
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.597948074340820
+3, 'logps/rejected': -339.44635009765625, 'logps/chosen': -477.93408203125, 'lo
+gits/rejected': -0.991300106048584, 'logits/chosen': -1.0645854473114014, 'epoc
+h': 4.92}
+{'loss': 0.3952, 'grad_norm': 2.78125, 'learning_rate': 1.5744032503809044e-07,
+ 'rewards/chosen': -1.670121431350708, 'rewards/rejected': -3.582665205001831,
+'rewards/accuracies': 0.7749999761581421, 'rewards/margins': 1.9125438928604126
+, 'logps/rejected': -304.6481018066406, 'logps/chosen': -420.82098388671875, 'l
+ogits/rejected': -0.993817150592804, 'logits/chosen': -1.1061558723449707, 'epo
+ch': 4.92}
+{'loss': 0.2014, 'grad_norm': 2.828125, 'learning_rate': 1.4728288471305233e-07
+, 'rewards/chosen': -1.5909417867660522, 'rewards/rejected': -4.612936496734619
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 3.021994829177856
+4, 'logps/rejected': -379.16253662109375, 'logps/chosen': -478.53546142578125,
+'logits/rejected': -1.0494171380996704, 'logits/chosen': -1.079590082168579, 'e
+poch': 4.93}
+{'loss': 0.245, 'grad_norm': 4.34375, 'learning_rate': 1.3712544438801423e-07,
+'rewards/chosen': -2.0813231468200684, 'rewards/rejected': -4.6717529296875, 'r
+ewards/accuracies': 0.875, 'rewards/margins': 2.59043025970459, 'logps/rejected
+': -351.80975341796875, 'logps/chosen': -458.52447509765625, 'logits/rejected':
+ -0.915076732635498, 'logits/chosen': -1.060663104057312, 'epoch': 4.93}
+{'loss': 0.2313, 'grad_norm': 8.4375, 'learning_rate': 1.2696800406297615e-07,
+'rewards/chosen': -1.7112642526626587, 'rewards/rejected': -4.7570600509643555,
+ 'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 3.045796155929565
+4, 'logps/rejected': -488.8651428222656, 'logps/chosen': -504.2471618652344, 'l
+ogits/rejected': -1.0952950716018677, 'logits/chosen': -1.137891411781311, 'epo
+ch': 4.94}
+{'loss': 0.3324, 'grad_norm': 3.75, 'learning_rate': 1.1681056373793804e-07, 'r
+ewards/chosen': -1.886797308921814, 'rewards/rejected': -4.119147300720215, 're
+wards/accuracies': 0.875, 'rewards/margins': 2.2323501110076904, 'logps/rejecte
+d': -256.09197998046875, 'logps/chosen': -358.50238037109375, 'logits/rejected'
+: -0.8648741841316223, 'logits/chosen': -0.9458545446395874, 'epoch': 4.94}
+{'loss': 0.2123, 'grad_norm': 11.9375, 'learning_rate': 1.0665312341289995e-07,
+ 'rewards/chosen': -1.7870858907699585, 'rewards/rejected': -4.523890972137451,
+ 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.7368052005767822
+, 'logps/rejected': -402.05828857421875, 'logps/chosen': -495.4601135253906, 'l
+ogits/rejected': -0.9950739145278931, 'logits/chosen': -1.1514357328414917, 'ep
+och': 4.95}
+{'loss': 0.1939, 'grad_norm': 3.4375, 'learning_rate': 9.649568308786187e-08, '
+rewards/chosen': -1.7774410247802734, 'rewards/rejected': -4.536783695220947, '
+rewards/accuracies': 0.949999988079071, 'rewards/margins': 2.759342670440674, '
+logps/rejected': -417.637939453125, 'logps/chosen': -455.15545654296875, 'logit
+s/rejected': -0.9153071641921997, 'logits/chosen': -0.9739009737968445, 'epoch'
+: 4.95}
+{'loss': 0.2107, 'grad_norm': 6.28125, 'learning_rate': 8.633824276282378e-08,
+'rewards/chosen': -1.9632301330566406, 'rewards/rejected': -4.764777660369873,
+'rewards/accuracies': 0.925000011920929, 'rewards/margins': 2.8015482425689697,
+ 'logps/rejected': -392.2995300292969, 'logps/chosen': -417.4720153808594, 'log
+its/rejected': -1.0178923606872559, 'logits/chosen': -1.0071173906326294, 'epoc
+h': 4.96}
+{'loss': 0.4318, 'grad_norm': 12.6875, 'learning_rate': 7.618080243778568e-08,
+'rewards/chosen': -2.1217942237854004, 'rewards/rejected': -4.41403341293335, '
+rewards/accuracies': 0.8500000238418579, 'rewards/margins': 2.2922396659851074,
+ 'logps/rejected': -403.5422058105469, 'logps/chosen': -516.445556640625, 'logi
+ts/rejected': -1.119329571723938, 'logits/chosen': -1.1982200145721436, 'epoch'
+: 4.96}
+{'loss': 0.24, 'grad_norm': 8.875, 'learning_rate': 6.602336211274759e-08, 'rew
+ards/chosen': -2.2179274559020996, 'rewards/rejected': -4.8716020584106445, 're
+wards/accuracies': 0.8999999761581421, 'rewards/margins': 2.653675079345703, 'l
+ogps/rejected': -364.771240234375, 'logps/chosen': -394.8450927734375, 'logits/
+rejected': -1.23228919506073, 'logits/chosen': -1.1957509517669678, 'epoch': 4.
+97}
+{'loss': 0.2529, 'grad_norm': 2.53125, 'learning_rate': 5.58659217877095e-08, '
+rewards/chosen': -1.5649009943008423, 'rewards/rejected': -4.53347110748291, 'r
+ewards/accuracies': 0.925000011920929, 'rewards/margins': 2.9685702323913574, '
+logps/rejected': -404.57080078125, 'logps/chosen': -474.6853942871094, 'logits/
+rejected': -1.0855374336242676, 'logits/chosen': -1.1890671253204346, 'epoch':
+4.97}
+{'loss': 0.3611, 'grad_norm': 2.34375, 'learning_rate': 4.570848146267141e-08,
+'rewards/chosen': -2.4990782737731934, 'rewards/rejected': -4.373164176940918,
+'rewards/accuracies': 0.875, 'rewards/margins': 1.8740856647491455, 'logps/reje
+cted': -373.3072509765625, 'logps/chosen': -516.6002197265625, 'logits/rejected
+': -1.1670923233032227, 'logits/chosen': -1.234154462814331, 'epoch': 4.98}
+{'loss': 0.2507, 'grad_norm': 7.9375, 'learning_rate': 3.555104113763332e-08, '
+rewards/chosen': -1.9867349863052368, 'rewards/rejected': -4.570886611938477, '
+rewards/accuracies': 0.875, 'rewards/margins': 2.58415150642395, 'logps/rejecte
+d': -422.2820739746094, 'logps/chosen': -398.5030212402344, 'logits/rejected':
+-1.0462825298309326, 'logits/chosen': -1.055311679840088, 'epoch': 4.98}
+{'loss': 0.1498, 'grad_norm': 3.71875, 'learning_rate': 2.539360081259523e-08,
+'rewards/chosen': -1.6495168209075928, 'rewards/rejected': -4.223731517791748,
+'rewards/accuracies': 1.0, 'rewards/margins': 2.574214458465576, 'logps/rejecte
+d': -426.6239318847656, 'logps/chosen': -553.3121337890625, 'logits/rejected':
+-1.0225857496261597, 'logits/chosen': -1.1500006914138794, 'epoch': 4.99}
+{'loss': 0.1734, 'grad_norm': 2.734375, 'learning_rate': 1.5236160487557137e-08
+, 'rewards/chosen': -1.7143104076385498, 'rewards/rejected': -4.734620094299316
+, 'rewards/accuracies': 0.925000011920929, 'rewards/margins': 3.020309925079345
+7, 'logps/rejected': -321.84136962890625, 'logps/chosen': -396.5180969238281, '
+logits/rejected': -0.9576022028923035, 'logits/chosen': -0.9882341623306274, 'e
+poch': 4.99}
+{'loss': 0.2689, 'grad_norm': 2.921875, 'learning_rate': 5.078720162519045e-09,
+ 'rewards/chosen': -2.435408353805542, 'rewards/rejected': -4.923060417175293,
+'rewards/accuracies': 0.8999999761581421, 'rewards/margins': 2.4876513481140137
+, 'logps/rejected': -357.91461181640625, 'logps/chosen': -423.59930419921875, '
+logits/rejected': -1.1441686153411865, 'logits/chosen': -1.1997034549713135, 'e
+poch': 5.0}
+{'eval_loss': 0.47968733310699463, 'eval_runtime': 495.631, 'eval_samples_per_s
+econd': 4.031, 'eval_steps_per_second': 2.016, 'eval_rewards/chosen': -2.230072
+498321533, 'eval_rewards/rejected': -4.136266708374023, 'eval_rewards/accuracie
+s': 0.7797797918319702, 'eval_rewards/margins': 1.9061942100524902, 'eval_logps
+/rejected': -367.1063537597656, 'eval_logps/chosen': -468.4640197753906, 'eval_
+logits/rejected': -1.0797150135040283, 'eval_logits/chosen': -1.112994790077209
+5, 'epoch': 5.0}
+{'train_runtime': 19568.2951, 'train_samples_per_second': 2.043, 'train_steps_p
+er_second': 0.511, 'train_loss': 0.3469167533130751, 'epoch': 5.0}
+
+100%|█████████████████████████████████████████████████████████| 9995/9995 [5:26
+:08<00:00,  1.96s/it]
+training_args.bin: 100%|███████████████████████████████████████| 5.11k/5.11k [0
+0:00<00:00, 5.37kB/s]
+adapter_model.safetensors: 100%|███████████████████████████████| 60.6M/60.6M [0
+0:03<00:00, 16.4MB/s]
+adapter_model.safetensors: 100%|███████████████████████████████| 60.6M/60.6M [0
+0:04<00:00, 14.2MB/s]
+Upload 3 LFS files: 100%|█████████████████████████████████████████████| 3/3 [00
+:04<00:00,  1.55s/it]
+wandb:
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/xudong/work/SAIL/wandb/offline-run-20260115_140929-cooh
+r5yr00:09,  4.64s/it]
+wandb: Find logs at: wandb/offline-run-20260115_140929-coohr5yr/logs
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+adapter_config.json: 100%|█████████████████████████████████████████| 720/720 [0
+0:00<00:00, 4.67MB/s]
+adapter_model.safetensors: 100%|███████████████████████████████| 60.6M/60.6M [0
+0:02<00:00, 24.5MB/s]
+ 97%|███████████████████████████████████████████████████████▏ | 1936/1998 [4:28
+:12<07:33,  7.31s/it][rank1]:[W socket.cpp:432] [c10d] While waitForInput, pool
+FD failed with (errno: 0 - Success).
+Traceback (most recent call last):
+  File "/home/xudong/work/SAIL/pipelines/generate.py", line 245, in <module>
+    main()
+  File "/home/xudong/work/SAIL/pipelines/generate.py", line 222, in main
+    results = generate_responses(model, tokenizer, eval_dataset, script_args)
+  File "/home/xudong/work/SAIL/pipelines/generate.py", line 204, in generate_re
+sponses
+    gathered = gather_object(result)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/utils/operations.py", line 468, in gather_object
+    return _gpu_gather_object(object)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/utils/operations.py", line 449, in _gpu_gather_object
+    torch.distributed.all_gather_object(output_objects, object)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/c10d_logger.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/distributed_c10d.py", line 2197, in all_gather_object
+    all_gather(object_size_list, local_size, group=group)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/c10d_logger.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/distributed_c10d.py", line 2615, in all_gather
+    work = default_pg.allgather([tensor_list], [tensor])
+torch.distributed.DistBackendError: [1] is setting up NCCL communicator and ret
+rieving ncclUniqueId from [0] via c10d key-value store by key '0', but store->g
+et('0') got error: Socket Timeout
+Exception raised from doWait at ../torch/csrc/distributed/c10d/TCPStore.cpp:550
+ (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7618b92
+f4d87 in /home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/tor
+ch/lib/libc10.so)
+frame #1: <unknown function> + 0x15c0e57 (0x7618a1bc0e57 in /home/xudong/minico
+nda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::doGet(std::string const&) + 0x32 (0x7618a5e8fce2 in /
+home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/lib
+torch_cpu.so)
+frame #3: c10d::TCPStore::get(std::string const&) + 0xa1 (0x7618a5e90b11 in /ho
+me/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libto
+rch_cpu.so)
+frame #4: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7618a5e45f81 in
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/li
+btorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7618a5e45f81 in
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/li
+btorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7618a5e45f81 in
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/li
+btorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7618a5e45f81 in
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/li
+btorch_cpu.so)
+frame #8: c10d::ProcessGroupNCCL::broadcastUniqueNCCLID(ncclUniqueId*, bool, st
+d::string const&, int) + 0xa9 (0x76186ee9cc69 in /home/xudong/miniconda3/envs/S
+AIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: c10d::ProcessGroupNCCL::getNCCLComm(std::string const&, std::vector<c
+10::Device, std::allocator<c10::Device> > const&, c10d::OpType, int, bool) + 0x
+22b (0x76186eea3c5b in /home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/sit
+e-packages/torch/lib/libtorch_cuda.so)
+frame #10: c10d::ProcessGroupNCCL::allgather(std::vector<std::vector<at::Tensor
+, std::allocator<at::Tensor> >, std::allocator<std::vector<at::Tensor, std::all
+ocator<at::Tensor> > > >&, std::vector<at::Tensor, std::allocator<at::Tensor> >
+&, c10d::AllgatherOptions const&) + 0xb5c (0x76186eeba05c in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x583a31d (0x7618a5e3a31d in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: <unknown function> + 0x5844218 (0x7618a5e44218 in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: <unknown function> + 0x4e893cc (0x7618a54893cc in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x1a08a88 (0x7618a2008a88 in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x584ba33 (0x7618a5e4ba33 in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0x5856e1f (0x7618a5e56e1f in /home/xudong/minic
+onda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: <unknown function> + 0xca3fae (0x7618b88a3fae in /home/xudong/minico
+nda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x413ea4 (0x7618b8013ea4 in /home/xudong/minico
+nda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #19: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x4fe087]
+frame #20: _PyObject_MakeTpCall + 0x25b (0x4f77db in /home/xudong/miniconda3/en
+vs/SAIL_LLM/bin/python3.10)
+frame #21: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x50a0cf]
+frame #22: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2fd6 in /home/xudong/minicond
+a3/envs/SAIL_LLM/bin/python3.10)
+frame #23: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #24: PyObject_Call + 0xb8 (0x50a908 in /home/xudong/miniconda3/envs/SAIL_
+LLM/bin/python3.10)
+frame #25: _PyEval_EvalFrameDefault + 0x2b79 (0x4f1029 in /home/xudong/minicond
+a3/envs/SAIL_LLM/bin/python3.10)
+frame #26: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #27: _PyEval_EvalFrameDefault + 0x13b3 (0x4ef863 in /home/xudong/minicond
+a3/envs/SAIL_LLM/bin/python3.10)
+frame #28: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #29: _PyEval_EvalFrameDefault + 0x2b79 (0x4f1029 in /home/xudong/minicond
+a3/envs/SAIL_LLM/bin/python3.10)
+frame #30: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #31: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2fd6 in /home/xudong/minicond
+a3/envs/SAIL_LLM/bin/python3.10)
+frame #32: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #33: _PyEval_EvalFrameDefault + 0x31f (0x4ee7cf in /home/xudong/miniconda
+3/envs/SAIL_LLM/bin/python3.10)
+frame #34: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #35: _PyEval_EvalFrameDefault + 0x31f (0x4ee7cf in /home/xudong/miniconda
+3/envs/SAIL_LLM/bin/python3.10)
+frame #36: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #37: _PyEval_EvalFrameDefault + 0x31f (0x4ee7cf in /home/xudong/miniconda
+3/envs/SAIL_LLM/bin/python3.10)
+frame #38: _PyFunction_Vectorcall + 0x6f (0x4fe4cf in /home/xudong/miniconda3/e
+nvs/SAIL_LLM/bin/python3.10)
+frame #39: _PyEval_EvalFrameDefault + 0x31f (0x4ee7cf in /home/xudong/miniconda
+3/envs/SAIL_LLM/bin/python3.10)
+frame #40: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x596192]
+frame #41: PyEval_EvalCode + 0x87 (0x5960d7 in /home/xudong/miniconda3/envs/SAI
+L_LLM/bin/python3.10)
+frame #42: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x5c72d7]
+frame #43: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x5c2420]
+frame #44: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x4598b9]
+frame #45: _PyRun_SimpleFileObject + 0x19f (0x5bc9af in /home/xudong/miniconda3
+/envs/SAIL_LLM/bin/python3.10)
+frame #46: _PyRun_AnyFileObject + 0x43 (0x5bc713 in /home/xudong/miniconda3/env
+s/SAIL_LLM/bin/python3.10)
+frame #47: Py_RunMain + 0x38d (0x5b94cd in /home/xudong/miniconda3/envs/SAIL_LL
+M/bin/python3.10)
+frame #48: Py_BytesMain + 0x39 (0x588fa9 in /home/xudong/miniconda3/envs/SAIL_L
+LM/bin/python3.10)
+frame #49: <unknown function> + 0x2a1ca (0x7618bb02a1ca in /lib/x86_64-linux-gn
+u/libc.so.6)
+frame #50: __libc_start_main + 0x8b (0x7618bb02a28b in /lib/x86_64-linux-gnu/li
+bc.so.6)
+frame #51: /home/xudong/miniconda3/envs/SAIL_LLM/bin/python3.10() [0x588e5e]
+. This may indicate a possible application crash on rank 0 or a network set up
+issue.
+[2026-01-16 00:08:37,243] torch.distributed.elastic.multiprocessing.api: [WARNI
+NG] Sending process 1035970 closing signal SIGTERM
+[2026-01-16 00:08:37,961] torch.distributed.elastic.multiprocessing.api: [ERROR
+] failed (exitcode: 1) local_rank: 1 (pid: 1035971) of binary: /home/xudong/min
+iconda3/envs/SAIL_LLM/bin/python3.10
+Traceback (most recent call last):
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/bin/accelerate", line 7, in <modu
+le>
+    sys.exit(main())
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/launch.py", line 1066, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/launch.py", line 711, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+============================================================
+/home/xudong/work/SAIL/pipelines/generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-16_00:08:37
+  host      : user-ESC8000A-E11
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1035971)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/
+errors.html
+============================================================
+Traceback (most recent call last):
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/bin/cdpo", line 7, in <module>
+    sys.exit(cli())
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/xudong/work/SAIL/cli.py", line 209, in gen
+    call("generate", accelerate_kwargs, **script_kwargs)
+  File "/home/xudong/work/SAIL/cli.py", line 107, in call
+    subprocess.run(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/subprocess.py", li
+ne 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['accelerate', 'launch', '--config_file
+=./configs/accelerate/generate/ddp.yaml', '--num_processes=2', '/home/xudong/wo
+rk/SAIL/pipelines/generate.py', '--run=DPO_Q0.5B_U10_beta0.10', '--tag=Q0.5B',
+'--per_device_generation_batch_size=4']' returned non-zero exit status 1.
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[2026-01-16 00:08:45,783] [INFO] [real_accelerator.py:203:get_accelerator] Sett
+ing ds_accelerator to cuda (auto detect)
+[2026-01-16 00:08:45,806] [INFO] [real_accelerator.py:203:get_accelerator] Sett
+ing ds_accelerator to cuda (auto detect)
+ [WARNING]  async_io requires the dev libaio .so object and headers but these w
+ere not found.
+ [WARNING]  async_io requires the dev libaio .so object and headers but these w
+ere not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting t
+he CFLAGS and LDFLAGS environment variables to where it can be found.
+ [WARNING]  Please specify the CUTLASS repo directory as environment variable $
+CUTLASS_PATH
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting t
+he CFLAGS and LDFLAGS environment variables to where it can be found.
+ [WARNING]  Please specify the CUTLASS repo directory as environment variable $
+CUTLASS_PATH
+ [WARNING]  sparse_attn requires a torch version >= 1.5 and < 2.0 but detected
+2.2
+ [WARNING]  using untested triton version (2.2.0), only 1.0.0 is known to be co
+mpatible
+ [WARNING]  sparse_attn requires a torch version >= 1.5 and < 2.0 but detected
+2.2
+ [WARNING]  using untested triton version (2.2.0), only 1.0.0 is known to be co
+mpatible
+Loading checkpoint shards: 100%|██████████████████████████████████████| 3/3 [00
+:27<00:00,  9.23s/it]
+Loading checkpoint shards: 100%|██████████████████████████████████████| 3/3 [00
+:28<00:00,  9.66s/it]
+Traceback (most recent call last):
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 227, in <module>
+    main()
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 212, in main
+    response_dataset = load_generated_dataset(script_args)
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 81, in load_gener
+ated_dataset
+    response_dataset = load_dataset(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2587, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2259, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1904, in dataset_module_factory
+    raise e1 from None
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1846, in dataset_module_factory
+    raise DatasetNotFoundError(msg + f" at revision '{revision}'" if revision e
+lse msg)
+datasets.exceptions.DatasetNotFoundError: Dataset 'xudongwu/DPO_Q0.5B_U10_beta0
+.10' doesn't exist on the Hub or cannot be accessed
+Traceback (most recent call last):
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 227, in <module>
+    main()
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 212, in main
+    response_dataset = load_generated_dataset(script_args)
+  File "/home/xudong/work/SAIL/pipelines/evalreward.py", line 81, in load_gener
+ated_dataset
+    response_dataset = load_dataset(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2587, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2259, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1904, in dataset_module_factory
+    raise e1 from None
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1846, in dataset_module_factory
+    raise DatasetNotFoundError(msg + f" at revision '{revision}'" if revision e
+lse msg)
+datasets.exceptions.DatasetNotFoundError: Dataset 'xudongwu/DPO_Q0.5B_U10_beta0
+.10' doesn't exist on the Hub or cannot be accessed
+[2026-01-16 00:09:21,920] torch.distributed.elastic.multiprocessing.api: [ERROR
+] failed (exitcode: 1) local_rank: 0 (pid: 2317686) of binary: /home/xudong/min
+iconda3/envs/SAIL_LLM/bin/python3.10
+Traceback (most recent call last):
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/bin/accelerate", line 7, in <modu
+le>
+    sys.exit(main())
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/accelerate_cli.py", line 46, in main
+    args.func(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/launch.py", line 1066, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/acce
+lerate/commands/launch.py", line 711, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torc
+h/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+============================================================
+/home/xudong/work/SAIL/pipelines/evalreward.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-01-16_00:09:21
+  host      : user-ESC8000A-E11
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2317687)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/
+errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-16_00:09:21
+  host      : user-ESC8000A-E11
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2317686)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/
+errors.html
+============================================================
+Traceback (most recent call last):
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/bin/cdpo", line 7, in <module>
+    sys.exit(cli())
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/xudong/work/SAIL/cli.py", line 234, in evalreward
+    call("evalreward", accelerate_kwargs, **script_kwargs)
+  File "/home/xudong/work/SAIL/cli.py", line 107, in call
+    subprocess.run(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/subprocess.py", li
+ne 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['accelerate', 'launch', '--config_file
+=./configs/accelerate/generate/ddp.yaml', '--num_processes=2', '/home/xudong/wo
+rk/SAIL/pipelines/evalreward.py', '--run=DPO_Q0.5B_U10_beta0.10', '--tag=Q0.5B'
+, '--per_device_evalreward_batch_size=8']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/bin/cdpo", line 7, in <module>
+    sys.exit(cli())
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/clic
+k/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/xudong/work/SAIL/cli.py", line 276, in execute
+    subprocess.run(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/subprocess.py", li
+ne 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['bash', './cache/tasks/local.sh']' ret
+urned non-zero exit status 1.
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ tmux capture-pane -S -100000 -
+p > full_log.txt
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ python ./pipelines/evalgpt.py
+\
+  --run_name DPR_Q0.5B_U10_beta0.10g0.30gamma0.30 \
+  --tag Q0.5B
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Downloading readme: 100%|█████████████████████| 486/486 [00:00<00:00, 2.73MB/s]
+^CTraceback (most recent call last):
+  File "/home/xudong/work/SAIL/./pipelines/evalgpt.py", line 362, in <module>
+    main()
+  File "/home/xudong/work/SAIL/./pipelines/evalgpt.py", line 326, in main
+    response_dataset = load_generated_dataset(script_args)
+  File "/home/xudong/work/SAIL/./pipelines/evalgpt.py", line 103, in load_gener
+ated_dataset
+    response_dataset = load_dataset(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2587, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 2259, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1892, in dataset_module_factory
+    ).get_module()
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/load.py", line 1224, in get_module
+    standalone_yaml_path = cached_path(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/utils/file_utils.py", line 201, in cached_path
+    output_path = get_from_cache(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/utils/file_utils.py", line 576, in get_from_cache
+    response = http_head(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/utils/file_utils.py", line 462, in http_head
+    response = _request_with_retry(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/data
+sets/utils/file_utils.py", line 336, in _request_with_retry
+    response = requests.request(method=method.upper(), url=url, timeout=timeout
+, **params)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/requ
+ests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/requ
+ests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/requ
+ests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/requ
+ests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/urll
+ib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ python ./pipelines/evalreward.
+py \
+  --run_name DPR_Q0.5B_U10_beta0.10g0.30gamma0.30 \
+  --tag Q0.5B
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/_
+_init__.py:54: FutureWarning: The pynvml package is deprecated. Please install
+nvidia-ml-py instead. If you did not install pynvml directly, please report thi
+s to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[2026-01-16 14:58:14,513] [INFO] [real_accelerator.py:203:get_accelerator] Sett
+ing ds_accelerator to cuda (auto detect)
+ [WARNING]  async_io requires the dev libaio .so object and headers but these w
+ere not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting t
+he CFLAGS and LDFLAGS environment variables to where it can be found.
+ [WARNING]  Please specify the CUTLASS repo directory as environment variable $
+CUTLASS_PATH
+ [WARNING]  sparse_attn requires a torch version >= 1.5 and < 2.0 but detected
+2.2
+ [WARNING]  using untested triton version (2.2.0), only 1.0.0 is known to be co
+mpatible
+Loading checkpoint shards: 100%|█████████████████| 3/3 [00:06<00:00,  2.17s/it]
+Downloading data: 100%|██████████████████████| 160k/160k [00:00<00:00, 403kB/s]
+Generating default split: 100%|███████| 50/50 [00:00<00:00, 8751.63 examples/s]
+100%|████████████████████████████████████████████| 4/4 [00:03<00:00,  1.07it/s]
+Creating parquet from Arrow format: 100%|███████| 1/1 [00:00<00:00, 466.92ba/s]
+Uploading the dataset shards: 100%|██████████████| 1/1 [00:01<00:00,  1.21s/it]
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ tmux capture-pan e -S -100000
+-p > full_log.txt
+command capture-pane: too many arguments (need at most 0)
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ tmux capture-pane -S -100000 -
+p > full_log.txt
+

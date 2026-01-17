@@ -169,3 +169,8 @@ configs/services/wandb.yaml
 configs/services/openai.yaml
 viewer/.env
 .env
+configs/services/openai.yaml
+configs/services/huggingface.yaml
+configs/services/openai.yaml
+configs/services/huggingface.yaml
+configs/services/huggingface.yaml

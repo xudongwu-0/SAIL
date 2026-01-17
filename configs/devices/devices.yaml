@@ -1,4 +1,5 @@
-local: "rtxa6000:4"
+# local: "rtxa6000:4"
+local: "rtxa5000:2"
 
 config_file:
   SFT: ./configs/accelerate/sft/zero2.yaml
@@ -16,7 +17,7 @@ pipelines:
       per_device_eval_batch_size: 10
   DPO:
     rtxa5000:
-      per_device_train_batch_size: 2
+      per_device_train_batch_size: 1 #2
       per_device_eval_batch_size: 1
       per_device_generation_batch_size: 8
       per_device_evalreward_batch_size: 4

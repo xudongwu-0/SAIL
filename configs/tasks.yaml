@@ -1,32 +1,56 @@
-tag: tag1
+# tag: tag1
+# pipelines:
+#   - SFT
+#   - DPO
+#   - GEN
+#   - EVALREWARD
+#   - EVALGPT
+# model:
+#   - L8B
+# dataset:
+#   - U0
+# tasks:
+#   - pipeline: DPO
+#     beta:
+#       - 0.1
+#   - pipeline: DDP
+#     beta:
+#       - 0.1
+#     r:
+#       - 0.4
+#     rho:
+#       - 0.2
+#   - pipeline: DPP
+#     beta:
+#       - 0.1
+#     p:
+#       - 0.3
+#     pi:
+#       - 0.2
+#   - pipeline: DPR
+#     beta:
+#       - 0.1
+#     g:
+#       - 0.3
+#     gamma:
+#       - 0.3
+
+
+tag: Q0.5B
 pipelines:
   - SFT
   - DPO
   - GEN
   - EVALREWARD
-  - EVALGPT
-model:
-  - L8B
+  # - EVALGPT
+model: 
+- Q0.5B   
 dataset:
-  - U0
+- U10
 tasks:
-  - pipeline: DPO
-    beta:
-      - 0.1
-  - pipeline: DDP
-    beta:
-      - 0.1
-    r:
-      - 0.4
-    rho:
-      - 0.2
-  - pipeline: DPP
-    beta:
-      - 0.1
-    p:
-      - 0.3
-    pi:
-      - 0.2
+  # - pipeline: DPO
+  #   beta:
+  #     - 0.1
   - pipeline: DPR
     beta:
       - 0.1
@@ -34,3 +58,4 @@ tasks:
       - 0.3
     gamma:
       - 0.3
+
