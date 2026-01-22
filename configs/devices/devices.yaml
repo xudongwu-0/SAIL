@@ -1,5 +1,5 @@
 # local: "rtxa6000:4"
-local: "rtxa5000:2"
+local: "rtxa5000:1"
 
 config_file:
   SFT: ./configs/accelerate/sft/zero2.yaml

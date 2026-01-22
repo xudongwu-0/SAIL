@@ -1,0 +1,58 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "Q0.5B",
+  "dataset_name": "dpr_q0.5_b_u10_beta0.10g0.30gamma0.30",
+  "dataset_size": 258145,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/xudongwu/DPR_Q0.5B_U10_beta0.10g0.30gamma0.30@a1620ec6c5e22cd3faaeecc5d7ec0332461a833d/Q0.5B/default-00000-of-00001.parquet": {
+      "num_bytes": 159933,
+      "checksum": null
+    }
+  },
+  "download_size": 159933,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reward_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "gpt_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 418078,
+  "splits": {
+    "default": {
+      "name": "default",
+      "num_bytes": 258145,
+      "num_examples": 50,
+      "dataset_name": "dpr_q0.5_b_u10_beta0.10g0.30gamma0.30"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

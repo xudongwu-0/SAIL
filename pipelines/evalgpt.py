@@ -7,12 +7,13 @@ from tqdm.auto import tqdm
 from tqdm.asyncio import tqdm_asyncio
 from huggingface_hub import HfApi
 import tiktoken
-from openai import AsyncAzureOpenAI, RateLimitError
+from openai import AsyncOpenAI, RateLimitError
 from aiolimiter import AsyncLimiter
 import asyncio
 import numpy as np
 from datasets import load_dataset, DatasetDict
 from transformers import HfArgumentParser
+from datetime import datetime
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils import CONFIGS, sample_every_k_batched
@@ -174,10 +175,12 @@ async def evaluate_gpt(response_dataset, script_args):
     )
     endpoints = [
         {
-            "client": AsyncAzureOpenAI(
-                azure_endpoint=client_config["azure_endpoint"],
+            "client": AsyncOpenAI(
+                # azure_endpoint=client_config["azure_endpoint"],
+                # api_key=client_config["api_key"],
+                # api_version=client_config["api_version"]
                 api_key=client_config["api_key"],
-                api_version=client_config["api_version"],
+                base_url=client_config["base_url"],
             ),
             "model_name": client_config["model_name"],
             "rate_limiter": AsyncLimiter(
@@ -348,6 +351,12 @@ def main():
 
     # Evaluation
     response_dataset = asyncio.run(evaluate_gpt(response_dataset, script_args))
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    save_dir = f"./eval_results/{script_args.run_name}_{script_args.tag}_{timestamp}"
+
+    response_dataset.save_to_disk(save_dir)
 
     # Push to Hub
     DatasetDict(

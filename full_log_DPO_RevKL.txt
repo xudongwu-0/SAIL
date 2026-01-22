@@ -1,0 +1,83 @@
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$ CUDA_VISIBLE_DEVICES=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True accelerate launch \
+  --config_file=./configs/accelerate/dpo/zero2.yaml \
+  --num_processes=1 \
+  ./pipelines/dpo.py \
+  --pipeline=DPR \
+  --model=Q0.5B \
+  --dataset=U10 \
+  --tag=Q0.5B \
+  --beta=0.1 \
+  --g=0.3 \
+  --gamma=0.3 \
+  --revkl \
+  --revkl_coef=0.02 \
+  --revkl_on=chosen \
+  --max_steps=200 \
+  --num_train_epochs=1 \
+  --per_device_train_batch_size=1 \
+  --per_device_eval_batch_size=1 \
+  --per_device_generation_batch_size=1 \
+  --model_max_length=512 \
+  --gradient_checkpointing=True \
+  --evaluation_strategy=no
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/__init__.py:54: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/xudong/miniconda3/envs/SAIL_LLM/lib/python3.10/site-packages/torch/cuda/__init__.py:54: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[2026-01-17 23:05:51,273] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+ [WARNING]  Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+ [WARNING]  sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.2
+ [WARNING]  using untested triton version (2.2.0), only 1.0.0 is known to be compatible
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+trainable params: 30,277,632 || all params: 524,542,976 || trainable%: 5.772192820288571
+wandb: Currently logged in as: 2373025856w (2373025856w-the-university-of-hong-kong) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.23.1
+wandb: Run data is saved locally in /home/xudong/work/SAIL/wandb/run-20260117_230832-99vtdpq9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Q0.5B-DPR_Q0.5B_U10_beta0.10g0.30gamma0.30
+wandb: ⭐️ View project at https://wandb.ai/2373025856w-the-university-of-hong-kong/sail-llm
+wandb: 🚀 View run at https://wandb.ai/2373025856w-the-university-of-hong-kong/sail-llm/runs/99vtdpq9
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████| 3/3 [00:24<00:00,  8.23s/it]
+Parameter 'function'=<bound method GeneralizedDPOTrainer.tokenize_row of <cdpo.cdpo_trainer.GeneralizedDPOTrainer object at 0x70e207e110c0>> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Map: 100%|█████████████████████████████████████████████████████████████████| 7995/7995 [00:30<00:00, 262.60 examples/s]
+Map: 100%|█████████████████████████████████████████████████████████████████| 1998/1998 [00:07<00:00, 281.90 examples/s]
+max_steps is given, it will override any value given in num_train_epochs
+  0%|                                                                                          | 0/200 [00:00<?, ?it/s]Could not estimate the number of tokens of the input, floating-point operations will not be computed
+{'loss': 0.6931, 'grad_norm': 8.5625, 'learning_rate': 3.3333333333333335e-07, 'loss/revkl': 0.0, 'loss/revkl_coef': 0.019999999552965164, 'rewards/chosen': 0.0, 'rewards/rejected': 0.0, 'rewards/accuracies': 0.0, 'rewards/margins': 0.0, 'logps/rejected': -319.4600830078125, 'logps/chosen': -345.6484680175781, 'logits/rejected': -1.7811863422393799, 'logits/chosen': -0.8482756614685059, 'epoch': 0.0}
+  0%|▍                                                                                 | 1/200 [00:03<10:54,  3.29s/it]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+{'loss': 0.6831, 'grad_norm': 6.375, 'learning_rate': 3.3333333333333333e-06, 'loss/revkl': -0.0094223003834486, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': 0.01566227711737156, 'rewards/rejected': -0.006039915606379509, 'rewards/accuracies': 0.5555555820465088, 'rewards/margins': 0.021702192723751068, 'logps/rejected': -297.7242736816406, 'logps/chosen': -333.8131408691406, 'logits/rejected': -1.2523417472839355, 'logits/chosen': -1.4851384162902832, 'epoch': 0.0}
+{'loss': 0.7022, 'grad_norm': 7.15625, 'learning_rate': 6.666666666666667e-06, 'loss/revkl': 0.021401796489953995, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.006567156407982111, 'rewards/rejected': 0.008556554093956947, 'rewards/accuracies': 0.44999998807907104, 'rewards/margins': -0.015123710036277771, 'logps/rejected': -279.05859375, 'logps/chosen': -286.79736328125, 'logits/rejected': -1.3624330759048462, 'logits/chosen': -1.328051209449768, 'epoch': 0.01}
+{'loss': 0.7055, 'grad_norm': 7.25, 'learning_rate': 1e-05, 'loss/revkl': 0.01728745736181736, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': 0.011309051886200905, 'rewards/rejected': 0.03135489299893379, 'rewards/accuracies': 0.5, 'rewards/margins': -0.020045842975378036, 'logps/rejected': -391.474853515625, 'logps/chosen': -379.7765197753906, 'logits/rejected': -1.6247278451919556, 'logits/chosen': -1.5757783651351929, 'epoch': 0.01}
+{'loss': 0.6847, 'grad_norm': 9.125, 'learning_rate': 1.3333333333333333e-05, 'loss/revkl': -0.010855944827198982, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': 0.006633357610553503, 'rewards/rejected': -0.0121994037181139, 'rewards/accuracies': 0.5, 'rewards/margins': 0.01883276179432869, 'logps/rejected': -329.08648681640625, 'logps/chosen': -358.73077392578125, 'logits/rejected': -1.6526380777359009, 'logits/chosen': -1.5611220598220825, 'epoch': 0.01}
+{'loss': 0.6556, 'grad_norm': 7.21875, 'learning_rate': 1.6666666666666667e-05, 'loss/revkl': 0.01704760268330574, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.02136307768523693, 'rewards/rejected': -0.10604474693536758, 'rewards/accuracies': 0.75, 'rewards/margins': 0.08468165248632431, 'logps/rejected': -292.811767578125, 'logps/chosen': -282.0606994628906, 'logits/rejected': -1.4647090435028076, 'logits/chosen': -1.364227056503296, 'epoch': 0.01}
+{'loss': 0.6926, 'grad_norm': 5.59375, 'learning_rate': 2e-05, 'loss/revkl': 0.10484285652637482, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.04293663054704666, 'rewards/rejected': -0.06135234236717224, 'rewards/accuracies': 0.699999988079071, 'rewards/margins': 0.01841570809483528, 'logps/rejected': -294.9152526855469, 'logps/chosen': -293.13702392578125, 'logits/rejected': -1.5540945529937744, 'logits/chosen': -1.567562222480774, 'epoch': 0.02}
+{'loss': 0.683, 'grad_norm': 6.0625, 'learning_rate': 2.3333333333333336e-05, 'loss/revkl': 0.09291080385446548, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.010198096744716167, 'rewards/rejected': -0.04679347947239876, 'rewards/accuracies': 0.44999998807907104, 'rewards/margins': 0.036595381796360016, 'logps/rejected': -273.5972595214844, 'logps/chosen': -285.1108703613281, 'logits/rejected': -1.2252534627914429, 'logits/chosen': -1.1471761465072632, 'epoch': 0.02}
+{'loss': 0.6664, 'grad_norm': 7.34375, 'learning_rate': 2.6666666666666667e-05, 'loss/revkl': 0.032807011157274246, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.027266349643468857, 'rewards/rejected': -0.09788884222507477, 'rewards/accuracies': 0.699999988079071, 'rewards/margins': 0.07062248140573502, 'logps/rejected': -269.66632080078125, 'logps/chosen': -295.0741882324219, 'logits/rejected': -1.4018232822418213, 'logits/chosen': -1.4668943881988525, 'epoch': 0.02}
+{'loss': 0.6286, 'grad_norm': 5.3125, 'learning_rate': 3e-05, 'loss/revkl': 0.04229556769132614, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': 0.06474010646343231, 'rewards/rejected': -0.0922299325466156, 'rewards/accuracies': 0.75, 'rewards/margins': 0.1569700390100479, 'logps/rejected': -238.44772338867188, 'logps/chosen': -345.29266357421875, 'logits/rejected': -1.4896600246429443, 'logits/chosen': -1.473022699356079, 'epoch': 0.02}
+{'loss': 0.6445, 'grad_norm': 5.5, 'learning_rate': 3.3333333333333335e-05, 'loss/revkl': 0.018268121406435966, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.0351070761680603, 'rewards/rejected': -0.1765182614326477, 'rewards/accuracies': 0.6499999761581421, 'rewards/margins': 0.1414111703634262, 'logps/rejected': -253.95718383789062, 'logps/chosen': -357.9361267089844, 'logits/rejected': -1.0515803098678589, 'logits/chosen': -1.3282939195632935, 'epoch': 0.03}
+{'loss': 0.4731, 'grad_norm': 5.1875, 'learning_rate': 3.6666666666666666e-05, 'loss/revkl': -0.05444306880235672, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.007607348263263702, 'rewards/rejected': -0.5907616019248962, 'rewards/accuracies': 0.800000011920929, 'rewards/margins': 0.5831542611122131, 'logps/rejected': -224.4512939453125, 'logps/chosen': -332.45306396484375, 'logits/rejected': -1.4143221378326416, 'logits/chosen': -1.4677207469940186, 'epoch': 0.03}
+{'loss': 0.743, 'grad_norm': 6.5, 'learning_rate': 4e-05, 'loss/revkl': -0.18289968371391296, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.45275917649269104, 'rewards/rejected': -0.44336041808128357, 'rewards/accuracies': 0.550000011920929, 'rewards/margins': -0.009398740716278553, 'logps/rejected': -318.6427001953125, 'logps/chosen': -344.4206237792969, 'logits/rejected': -1.7587831020355225, 'logits/chosen': -1.6834135055541992, 'epoch': 0.03}
+{'loss': 0.6691, 'grad_norm': 7.0, 'learning_rate': 4.3333333333333334e-05, 'loss/revkl': 0.05358705669641495, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.1362556517124176, 'rewards/rejected': -0.26158836483955383, 'rewards/accuracies': 0.6499999761581421, 'rewards/margins': 0.12533274292945862, 'logps/rejected': -291.70892333984375, 'logps/chosen': -246.42788696289062, 'logits/rejected': -1.3484376668930054, 'logits/chosen': -1.4439098834991455, 'epoch': 0.03}
+{'loss': 0.6425, 'grad_norm': 14.6875, 'learning_rate': 4.666666666666667e-05, 'loss/revkl': -0.017956115305423737, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.08761104196310043, 'rewards/rejected': -0.35765162110328674, 'rewards/accuracies': 0.699999988079071, 'rewards/margins': 0.2700406312942505, 'logps/rejected': -391.63568115234375, 'logps/chosen': -370.35528564453125, 'logits/rejected': -1.504662275314331, 'logits/chosen': -1.508366584777832, 'epoch': 0.04}
+{'loss': 0.628, 'grad_norm': 4.0, 'learning_rate': 5e-05, 'loss/revkl': 0.1442790925502777, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.12286390364170074, 'rewards/rejected': -0.444884717464447, 'rewards/accuracies': 0.550000011920929, 'rewards/margins': 0.32202082872390747, 'logps/rejected': -327.1432800292969, 'logps/chosen': -331.1448669433594, 'logits/rejected': -1.2641738653182983, 'logits/chosen': -1.3427257537841797, 'epoch': 0.04}
+{'loss': 0.6184, 'grad_norm': 5.09375, 'learning_rate': 4e-05, 'loss/revkl': 0.12673386931419373, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.0009486436611041427, 'rewards/rejected': -0.24262762069702148, 'rewards/accuracies': 0.75, 'rewards/margins': 0.24167895317077637, 'logps/rejected': -291.9588928222656, 'logps/chosen': -300.8860168457031, 'logits/rejected': -1.5440930128097534, 'logits/chosen': -1.383675217628479, 'epoch': 0.04}
+{'loss': 0.6108, 'grad_norm': 6.9375, 'learning_rate': 3e-05, 'loss/revkl': 0.12007208168506622, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': 0.14041723310947418, 'rewards/rejected': -0.15528319776058197, 'rewards/accuracies': 0.6499999761581421, 'rewards/margins': 0.29570040106773376, 'logps/rejected': -308.5666198730469, 'logps/chosen': -383.546142578125, 'logits/rejected': -1.4720757007598877, 'logits/chosen': -1.704427719116211, 'epoch': 0.04}
+{'loss': 0.5504, 'grad_norm': 5.84375, 'learning_rate': 2e-05, 'loss/revkl': 0.14407867193222046, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.08564148098230362, 'rewards/rejected': -0.5951019525527954, 'rewards/accuracies': 0.699999988079071, 'rewards/margins': 0.5094605088233948, 'logps/rejected': -299.9981994628906, 'logps/chosen': -381.20501708984375, 'logits/rejected': -1.2920266389846802, 'logits/chosen': -1.255643606185913, 'epoch': 0.05}
+{'loss': 0.5652, 'grad_norm': 4.53125, 'learning_rate': 1e-05, 'loss/revkl': 0.013191357254981995, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.034882884472608566, 'rewards/rejected': -0.47157973051071167, 'rewards/accuracies': 0.6000000238418579, 'rewards/margins': 0.4366969168186188, 'logps/rejected': -311.68060302734375, 'logps/chosen': -325.1830139160156, 'logits/rejected': -1.6324933767318726, 'logits/chosen': -1.5918394327163696, 'epoch': 0.05}
+{'loss': 0.5927, 'grad_norm': 5.15625, 'learning_rate': 0.0, 'loss/revkl': 0.023421060293912888, 'loss/revkl_coef': 0.019999997690320015, 'rewards/chosen': -0.06444630026817322, 'rewards/rejected': -0.36968907713890076, 'rewards/accuracies': 0.699999988079071, 'rewards/margins': 0.3052428066730499, 'logps/rejected': -287.6732482910156, 'logps/chosen': -326.6837158203125, 'logits/rejected': -1.0002477169036865, 'logits/chosen': -0.9410945177078247, 'epoch': 0.05}
+{'train_runtime': 2970.6842, 'train_samples_per_second': 0.135, 'train_steps_per_second': 0.067, 'train_loss': 0.6420242404937744, 'epoch': 0.05}
+100%|████████████████████████████████████████████████████████████████████████████████| 200/200 [49:30<00:00, 14.85s/it]
+training_args.bin: 100%|██████████████████████████████████████████████████████████| 5.18k/5.18k [00:00<00:00, 13.7kB/s]
+adapter_model.safetensors: 100%|██████████████████████████████████████████████████| 60.6M/60.6M [00:03<00:00, 17.0MB/s]
+adapter_model.safetensors: 100%|██████████████████████████████████████████████████| 60.6M/60.6M [00:05<00:00, 11.0MB/s]
+Upload 3 LFS files: 100%|████████████████████████████████████████████████████████████████| 3/3 [02:14<00:00, 44.90s/it]
+wandb: 
+wandb: 🚀 View run Q0.5B-DPR_Q0.5B_U10_beta0.10g0.30gamma0.30 at: https://wandb.ai/2373025856w-the-university-of-hong-kong/sail-llm/runs/99vtdpq9
+wandb: Find logs at: wandb/run-20260117_230832-99vtdpq9/logs
+(SAIL_LLM) xudong@user-ESC8000A-E11:~/work/SAIL$
