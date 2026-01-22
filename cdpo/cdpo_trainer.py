@@ -1,3 +1,4 @@
+# SAIL/cdpo/cdpo_trainer.py
 import inspect
 import random
 import warnings
@@ -200,6 +201,9 @@ class GeneralizedDPOTrainer(Trainer):
         pi: float = 0.0,
         g: float = 0.0,
         gamma: float = 0.0,
+        revkl: bool = False,
+        revkl_coef: float = 0.0,
+        revkl_on: str = "both",
         ##############################
     ):
         if model_init_kwargs is None:
@@ -423,6 +427,11 @@ class GeneralizedDPOTrainer(Trainer):
         self.pi = pi
         self.g = g
         self.gamma = gamma
+        # ===== RevKL (independent) =====
+        self.revkl = revkl
+        self.revkl_coef = revkl_coef
+        self.revkl_on = revkl_on
+        # ##############################
         self._dpp_generation_inputs = []
         self._dpp_generation_outputs = []
         self._dpr_generation_inputs = []
@@ -1242,6 +1251,40 @@ class GeneralizedDPOTrainer(Trainer):
         else:
             return (per_token_logps * loss_mask).sum(-1)
 
+    def _token_kl_ref_pi(self, ref_logits: torch.Tensor, pi_logits: torch.Tensor, labels: torch.Tensor):
+        """
+        Token-level proxy for reverse-KL: E_t[ log p_ref(y_t) - log p_pi(y_t) ]
+        ref_logits, pi_logits: [B, T, V]
+        labels: [B, T] with -100 for ignored tokens
+        Returns: scalar tensor
+        """
+        # ---- 0) align lengths ----
+        T = labels.size(1)
+        ref_logits = ref_logits[:, :T, :]
+        pi_logits  = pi_logits[:, :T, :]
+
+        # ---- 1) build mask ----
+        mask = (labels != -100)  # [B, T]
+        safe_labels = labels.clone()
+        safe_labels[~mask] = 0   # avoid gather out-of-range
+
+        # ---- 2) logp(label) = logit(label) - logsumexp(logits) ----
+        ref_tok_logit = torch.gather(ref_logits, dim=-1, index=safe_labels.unsqueeze(-1)).squeeze(-1)  # [B,T]
+        pi_tok_logit  = torch.gather(pi_logits,  dim=-1, index=safe_labels.unsqueeze(-1)).squeeze(-1) # [B,T]
+
+        ref_lse = torch.logsumexp(ref_logits, dim=-1)  # [B,T]
+        pi_lse  = torch.logsumexp(pi_logits,  dim=-1)  # [B,T]
+
+        logp_ref_tok = ref_tok_logit - ref_lse  # [B,T]
+        logp_pi_tok  = pi_tok_logit  - pi_lse   # [B,T]
+
+        # ---- 3) token avg over valid positions ----
+        diff = (logp_ref_tok - logp_pi_tok) * mask  # [B,T]
+        denom = mask.sum().clamp(min=1)
+        return diff.sum() / denom
+
+
+
     def concatenated_forward(
         self, model: nn.Module, batch: Dict[str, Union[List, torch.LongTensor]]
     ) -> Tuple[
@@ -1358,9 +1401,47 @@ class GeneralizedDPOTrainer(Trainer):
             reference_rejected_logps,
             train_eval,
         )
+
+        # ===== RevKL regularizer (independent of DPR) =====
+        if self.revkl and (self.revkl_coef > 0):
+            # Compute reference logits (no grad). We already have policy logits from concatenated_forward.
+            with torch.no_grad():
+                if self.ref_model is None:
+                    with self.null_ref_context():
+                        (
+                            reference_chosen_logps,
+                            reference_rejected_logps,
+                            ref_chosen_logits,
+                            ref_rejected_logits,
+                        ) = self.concatenated_forward(self.model, batch)
+                else:
+                    (
+                        reference_chosen_logps,
+                        reference_rejected_logps,
+                        ref_chosen_logits,
+                        ref_rejected_logits,
+                    ) = self.concatenated_forward(self.ref_model, batch)
+            parts = []
+            if self.revkl_on in ("chosen", "both"):
+                parts.append(self._token_kl_ref_pi(ref_chosen_logits, policy_chosen_logits, batch["chosen_labels"]))
+            if self.revkl_on in ("rejected", "both"):
+                parts.append(self._token_kl_ref_pi(ref_rejected_logits, policy_rejected_logits, batch["rejected_labels"]))
+
+            revkl_loss = sum(parts) / len(parts)
+
+            # losses is shape [B], revkl_loss is scalar -> broadcast add
+            losses = losses + self.revkl_coef * revkl_loss
+        # ===== End RevKL =====
+
+
+    
         reward_accuracies = (chosen_rewards > rejected_rewards).float()
 
         prefix = "eval_" if train_eval == "eval" else ""
+        if self.revkl and (self.revkl_coef > 0):
+            metrics[f"{prefix}loss/revkl"] = revkl_loss.detach().cpu()
+            metrics[f"{prefix}loss/revkl_coef"] = torch.tensor(self.revkl_coef).cpu()
+
         metrics[f"{prefix}rewards/chosen"] = chosen_rewards.mean().cpu()
         metrics[f"{prefix}rewards/rejected"] = rejected_rewards.mean().cpu()
         metrics[f"{prefix}rewards/accuracies"] = reward_accuracies.mean().cpu()

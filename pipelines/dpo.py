@@ -1,3 +1,4 @@
+# SAIL/pipelines/dpo.py
 import os
 import sys
 import shutil
@@ -68,6 +69,10 @@ class ScriptArguments:
         default=0.0, metadata={"help": "sampling mixing probability for DPR"}
     )
     gamma: float = field(default=0.0, metadata={"help": "gradient coefficient for DPR"})
+    # ===== RevKL (independent of DPR) =====
+    revkl: bool = field(default=False, metadata={"help": "enable reverse-KL regularizer"})
+    revkl_coef: float = field(default=0.0, metadata={"help": "coefficient for reverse-KL"})
+    revkl_on: str = field(default="both", metadata={"help": "apply revkl on chosen/rejected/both"})
     # Use LoRA by default, full training not supported
     use_lora: bool = field(
         default=True, metadata={"help": "use LoRA by default, do not change"}
@@ -345,6 +350,11 @@ def train(model, tokenizer, train_dataset, eval_dataset, script_args, training_a
         pi=script_args.pi,
         g=script_args.g,
         gamma=script_args.gamma,
+        # ===== RevKL (independent of DPR) =====
+        revkl=script_args.revkl,
+        revkl_coef=script_args.revkl_coef,
+        revkl_on=script_args.revkl_on,
+
     )
     trainer.train()
     return trainer

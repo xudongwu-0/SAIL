@@ -174,3 +174,7 @@ configs/services/huggingface.yaml
 configs/services/openai.yaml
 configs/services/huggingface.yaml
 configs/services/huggingface.yaml
+
+# secrets
+configs/services/huggingface.yaml
+configs/services/openai.yaml
