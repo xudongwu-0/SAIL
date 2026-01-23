@@ -1076,18 +1076,39 @@ class GeneralizedDPOTrainer(Trainer):
 
         ##############################
         # DDP
+        # if train_eval == "train":
+        #     # Probability of swithching the chosen and rejected responses
+        #     # Which are independent Bernoulli random variables with probability 1 - \sigmoid(\beta * logits)
+        #     policy_preference_switching_mask = (
+        #         torch.bernoulli(1 - F.sigmoid(self.beta * logits))
+        #         .bool()
+        #         .to(logits.device)
+        #     )
+        #     # If both mixing and switching Bernoulli variables of a sample are 1, then the chosen and rejected responses are switched
+        #     logits = (
+        #         1 - 2 * self._ddp_sampling_mask * policy_preference_switching_mask
+        #     ) * logits
+        # DDP (SAFE)
         if train_eval == "train":
-            # Probability of swithching the chosen and rejected responses
-            # Which are independent Bernoulli random variables with probability 1 - \sigmoid(\beta * logits)
-            policy_preference_switching_mask = (
-                torch.bernoulli(1 - F.sigmoid(self.beta * logits))
-                .bool()
-                .to(logits.device)
-            )
-            # If both mixing and switching Bernoulli variables of a sample are 1, then the chosen and rejected responses are switched
+
+            # ---- guard: empty / invalid logits -> skip batch ----
+            if logits.numel() == 0 or not torch.isfinite(logits).all():
+                zero = torch.zeros(
+                    (), device=logits.device, dtype=logits.dtype, requires_grad=True
+                )
+                return zero, zero.detach(), zero.detach()
+
+            prob = torch.sigmoid(self.beta * logits)
+            prob = torch.nan_to_num(prob, nan=0.5, posinf=1.0, neginf=0.0)
+            prob = prob.clamp(0.0, 1.0)
+
+            switching_p = (1.0 - prob).clamp(0.0, 1.0)
+            policy_preference_switching_mask = torch.bernoulli(switching_p).bool()
+
             logits = (
                 1 - 2 * self._ddp_sampling_mask * policy_preference_switching_mask
             ) * logits
+
         ##############################
 
         # The beta is a temperature parameter for the DPO loss, typically something in the range of 0.1 to 0.5.
@@ -1336,35 +1357,194 @@ class GeneralizedDPOTrainer(Trainer):
 
         return (chosen_logps, rejected_logps, chosen_logits, rejected_logits)
 
+    # def get_batch_loss_metrics(
+    #     self,
+    #     model,
+    #     batch: Dict[str, Union[List, torch.LongTensor]],
+    #     train_eval: Literal["train", "eval"] = "train",
+    # ):
+    #     """Compute the DPO loss and other metrics for the given batch of inputs for train or test."""
+    #     metrics = {}
+
+    #     ##############################
+    #     # DDP & DPP & DPR
+    #     if train_eval == "train":
+
+    #         # Random state alreay synctronized and mask will be the same across all GPUs
+    #         # Sampling masks for DDP & DPP & DPR
+    #         probs = torch.tensor([self.r, self.p, self.g, 1 - self.r - self.p - self.g])
+    #         sampling_routes = torch.multinomial(
+    #             probs, len(batch["prompt"]), replacement=True
+    #         )
+    #         self._ddp_sampling_mask = (sampling_routes == 0).to(self.accelerator.device)
+    #         self._dpp_sampling_mask = (sampling_routes == 1).to(self.accelerator.device)
+    #         self._dpr_sampling_mask = (sampling_routes == 2).to(self.accelerator.device)
+
+    #         # DPP & DPR
+    #         if (self._dpp_sampling_mask | self._dpr_sampling_mask).sum() > 0:
+    #             batch = self.generate_samples(model, batch)
+
+    #     ##############################
+
+    #     (
+    #         policy_chosen_logps,
+    #         policy_rejected_logps,
+    #         policy_chosen_logits,
+    #         policy_rejected_logits,
+    #     ) = self.concatenated_forward(model, batch)
+
+    #     # if reference_chosen_logps and reference_rejected_logps in batch use them, otherwise use the reference model
+    #     if "reference_chosen_logps" in batch and "reference_rejected_logps" in batch:
+    #         reference_chosen_logps = batch["reference_chosen_logps"]
+    #         reference_rejected_logps = batch["reference_rejected_logps"]
+    #     else:
+    #         with torch.no_grad():
+    #             if self.ref_model is None:
+    #                 with self.null_ref_context():
+    #                     (
+    #                         reference_chosen_logps,
+    #                         reference_rejected_logps,
+    #                         _,
+    #                         _,
+    #                     ) = self.concatenated_forward(self.model, batch)
+    #             else:
+    #                 (
+    #                     reference_chosen_logps,
+    #                     reference_rejected_logps,
+    #                     _,
+    #                     _,
+    #                 ) = self.concatenated_forward(self.ref_model, batch)
+
+    #     losses, chosen_rewards, rejected_rewards = self.dpo_loss(
+    #         policy_chosen_logps,
+    #         policy_rejected_logps,
+    #         reference_chosen_logps,
+    #         reference_rejected_logps,
+    #         train_eval,
+    #     )
+
+    #     # ===== RevKL regularizer (independent of DPR) =====
+    #     if self.revkl and (self.revkl_coef > 0):
+    #         # Compute reference logits (no grad). We already have policy logits from concatenated_forward.
+    #         with torch.no_grad():
+    #             if self.ref_model is None:
+    #                 with self.null_ref_context():
+    #                     (
+    #                         reference_chosen_logps,
+    #                         reference_rejected_logps,
+    #                         ref_chosen_logits,
+    #                         ref_rejected_logits,
+    #                     ) = self.concatenated_forward(self.model, batch)
+    #             else:
+    #                 (
+    #                     reference_chosen_logps,
+    #                     reference_rejected_logps,
+    #                     ref_chosen_logits,
+    #                     ref_rejected_logits,
+    #                 ) = self.concatenated_forward(self.ref_model, batch)
+    #         parts = []
+    #         if self.revkl_on in ("chosen", "both"):
+    #             parts.append(self._token_kl_ref_pi(ref_chosen_logits, policy_chosen_logits, batch["chosen_labels"]))
+    #         if self.revkl_on in ("rejected", "both"):
+    #             parts.append(self._token_kl_ref_pi(ref_rejected_logits, policy_rejected_logits, batch["rejected_labels"]))
+
+    #         revkl_loss = sum(parts) / len(parts)
+
+    #         # losses is shape [B], revkl_loss is scalar -> broadcast add
+    #         losses = losses + self.revkl_coef * revkl_loss
+    #     # ===== End RevKL =====
+
+
+    
+    #     reward_accuracies = (chosen_rewards > rejected_rewards).float()
+
+    #     prefix = "eval_" if train_eval == "eval" else ""
+    #     if self.revkl and (self.revkl_coef > 0):
+    #         metrics[f"{prefix}loss/revkl"] = revkl_loss.detach().cpu()
+    #         metrics[f"{prefix}loss/revkl_coef"] = torch.tensor(self.revkl_coef).cpu()
+
+    #     metrics[f"{prefix}rewards/chosen"] = chosen_rewards.mean().cpu()
+
+
+    #     metrics[f"{prefix}rewards/rejected"] = rejected_rewards.mean().cpu()
+    #     metrics[f"{prefix}rewards/accuracies"] = reward_accuracies.mean().cpu()
+    #     metrics[f"{prefix}rewards/margins"] = (
+    #         (chosen_rewards - rejected_rewards).mean().cpu()
+    #     )
+    #     metrics[f"{prefix}logps/rejected"] = policy_rejected_logps.detach().mean().cpu()
+    #     metrics[f"{prefix}logps/chosen"] = policy_chosen_logps.detach().mean().cpu()
+    #     metrics[f"{prefix}logits/rejected"] = (
+    #         policy_rejected_logits.detach().mean().cpu()
+    #     )
+    #     metrics[f"{prefix}logits/chosen"] = policy_chosen_logits.detach().mean().cpu()
+
+    #     return losses.mean(), metrics
+
     def get_batch_loss_metrics(
-        self,
-        model,
-        batch: Dict[str, Union[List, torch.LongTensor]],
-        train_eval: Literal["train", "eval"] = "train",
-    ):
+    self,
+    model,
+    batch: Dict[str, Union[List, torch.LongTensor]],
+    train_eval: Literal["train", "eval"] = "train",
+):
         """Compute the DPO loss and other metrics for the given batch of inputs for train or test."""
         metrics = {}
+
+        # -----------------------------
+        # 0) cheap guard: empty batch
+        # -----------------------------
+        # batch["prompt"] is list[str] in your pipeline
+        if ("prompt" not in batch) or (len(batch["prompt"]) == 0):
+            # return a zero scalar loss that keeps graph valid
+            zero = torch.zeros((), device=self.accelerator.device, requires_grad=(train_eval == "train"))
+            return zero, {}
 
         ##############################
         # DDP & DPP & DPR
         if train_eval == "train":
+            # ---- 1) make probs safe ----
+            # clamp to avoid negative / sum>1 / NaN in multinomial
+            r = float(self.r)
+            p = float(self.p)
+            g = float(self.g)
+            rest = 1.0 - r - p - g
+            if rest < 0:
+                # if user misconfig, renormalize to a simplex
+                # (this is safer than crashing)
+                total = max(r + p + g, 1e-12)
+                r, p, g = r / total, p / total, g / total
+                rest = 0.0
 
-            # Random state alreay synctronized and mask will be the same across all GPUs
-            # Sampling masks for DDP & DPP & DPR
-            probs = torch.tensor([self.r, self.p, self.g, 1 - self.r - self.p - self.g])
-            sampling_routes = torch.multinomial(
-                probs, len(batch["prompt"]), replacement=True
-            )
-            self._ddp_sampling_mask = (sampling_routes == 0).to(self.accelerator.device)
-            self._dpp_sampling_mask = (sampling_routes == 1).to(self.accelerator.device)
-            self._dpr_sampling_mask = (sampling_routes == 2).to(self.accelerator.device)
+            probs = torch.tensor([r, p, g, rest], device=self.accelerator.device, dtype=torch.float32)
+
+            # multinomial expects probs >= 0 and sum > 0
+            if torch.any(probs < 0) or (probs.sum() <= 0) or (not torch.isfinite(probs).all()):
+                zero = torch.zeros((), device=self.accelerator.device, requires_grad=True)
+                return zero, {}
+
+            sampling_routes = torch.multinomial(probs, len(batch["prompt"]), replacement=True)
+            self._ddp_sampling_mask = (sampling_routes == 0)
+            self._dpp_sampling_mask = (sampling_routes == 1)
+            self._dpr_sampling_mask = (sampling_routes == 2)
+
+            # ensure bool + on device
+            self._ddp_sampling_mask = self._ddp_sampling_mask.to(self.accelerator.device)
+            self._dpp_sampling_mask = self._dpp_sampling_mask.to(self.accelerator.device)
+            self._dpr_sampling_mask = self._dpr_sampling_mask.to(self.accelerator.device)
 
             # DPP & DPR
             if (self._dpp_sampling_mask | self._dpr_sampling_mask).sum() > 0:
                 batch = self.generate_samples(model, batch)
 
+                # after generate_samples, batch might become invalid/empty due to insufficient outputs
+                if ("prompt" not in batch) or (len(batch["prompt"]) == 0):
+                    zero = torch.zeros((), device=self.accelerator.device, requires_grad=True)
+                    return zero, {}
+
         ##############################
 
+        # -----------------------------
+        # 2) forward policy
+        # -----------------------------
         (
             policy_chosen_logps,
             policy_rejected_logps,
@@ -1372,7 +1552,20 @@ class GeneralizedDPOTrainer(Trainer):
             policy_rejected_logits,
         ) = self.concatenated_forward(model, batch)
 
-        # if reference_chosen_logps and reference_rejected_logps in batch use them, otherwise use the reference model
+        # ---- 2.1) guard: empty/NaN policy outputs ----
+        # if generation不足导致某些tensor是空/NaN，这里直接跳过step
+        if (
+            (policy_chosen_logps.numel() == 0)
+            or (policy_rejected_logps.numel() == 0)
+            or (not torch.isfinite(policy_chosen_logps).all())
+            or (not torch.isfinite(policy_rejected_logps).all())
+        ):
+            zero = torch.zeros((), device=self.accelerator.device, requires_grad=(train_eval == "train"))
+            return zero, {}
+
+        # -----------------------------
+        # 3) reference logps
+        # -----------------------------
         if "reference_chosen_logps" in batch and "reference_rejected_logps" in batch:
             reference_chosen_logps = batch["reference_chosen_logps"]
             reference_rejected_logps = batch["reference_rejected_logps"]
@@ -1380,20 +1573,23 @@ class GeneralizedDPOTrainer(Trainer):
             with torch.no_grad():
                 if self.ref_model is None:
                     with self.null_ref_context():
-                        (
-                            reference_chosen_logps,
-                            reference_rejected_logps,
-                            _,
-                            _,
-                        ) = self.concatenated_forward(self.model, batch)
+                        reference_chosen_logps, reference_rejected_logps, _, _ = self.concatenated_forward(self.model, batch)
                 else:
-                    (
-                        reference_chosen_logps,
-                        reference_rejected_logps,
-                        _,
-                        _,
-                    ) = self.concatenated_forward(self.ref_model, batch)
+                    reference_chosen_logps, reference_rejected_logps, _, _ = self.concatenated_forward(self.ref_model, batch)
 
+        # ---- 3.1) guard: empty/NaN ref outputs ----
+        if (
+            (reference_chosen_logps.numel() == 0)
+            or (reference_rejected_logps.numel() == 0)
+            or (not torch.isfinite(reference_chosen_logps).all())
+            or (not torch.isfinite(reference_rejected_logps).all())
+        ):
+            zero = torch.zeros((), device=self.accelerator.device, requires_grad=(train_eval == "train"))
+            return zero, {}
+
+        # -----------------------------
+        # 4) dpo loss
+        # -----------------------------
         losses, chosen_rewards, rejected_rewards = self.dpo_loss(
             policy_chosen_logps,
             policy_rejected_logps,
@@ -1402,60 +1598,63 @@ class GeneralizedDPOTrainer(Trainer):
             train_eval,
         )
 
-        # ===== RevKL regularizer (independent of DPR) =====
+        # guard: losses invalid
+        if (losses.numel() == 0) or (not torch.isfinite(losses).all()):
+            zero = torch.zeros((), device=self.accelerator.device, requires_grad=(train_eval == "train"))
+            return zero, {}
+
+        # -----------------------------
+        # 5) RevKL (optional)
+        # -----------------------------
+        revkl_loss = None
         if self.revkl and (self.revkl_coef > 0):
-            # Compute reference logits (no grad). We already have policy logits from concatenated_forward.
             with torch.no_grad():
                 if self.ref_model is None:
                     with self.null_ref_context():
-                        (
-                            reference_chosen_logps,
-                            reference_rejected_logps,
-                            ref_chosen_logits,
-                            ref_rejected_logits,
-                        ) = self.concatenated_forward(self.model, batch)
+                        _, _, ref_chosen_logits, ref_rejected_logits = self.concatenated_forward(self.model, batch)
                 else:
-                    (
-                        reference_chosen_logps,
-                        reference_rejected_logps,
-                        ref_chosen_logits,
-                        ref_rejected_logits,
-                    ) = self.concatenated_forward(self.ref_model, batch)
+                    _, _, ref_chosen_logits, ref_rejected_logits = self.concatenated_forward(self.ref_model, batch)
+
             parts = []
             if self.revkl_on in ("chosen", "both"):
                 parts.append(self._token_kl_ref_pi(ref_chosen_logits, policy_chosen_logits, batch["chosen_labels"]))
             if self.revkl_on in ("rejected", "both"):
                 parts.append(self._token_kl_ref_pi(ref_rejected_logits, policy_rejected_logits, batch["rejected_labels"]))
 
-            revkl_loss = sum(parts) / len(parts)
+            # 如果 parts 为空（配置错误），直接不加 revkl，避免除0
+            if len(parts) > 0:
+                revkl_loss = sum(parts) / len(parts)
 
-            # losses is shape [B], revkl_loss is scalar -> broadcast add
-            losses = losses + self.revkl_coef * revkl_loss
-        # ===== End RevKL =====
+                # guard: revkl_loss invalid
+                if torch.isfinite(revkl_loss):
+                    losses = losses + float(self.revkl_coef) * revkl_loss
+                else:
+                    revkl_loss = None  # don't log bad value
 
-
-    
+        # -----------------------------
+        # 6) metrics (must be safe)
+        # -----------------------------
         reward_accuracies = (chosen_rewards > rejected_rewards).float()
-
         prefix = "eval_" if train_eval == "eval" else ""
-        if self.revkl and (self.revkl_coef > 0):
-            metrics[f"{prefix}loss/revkl"] = revkl_loss.detach().cpu()
-            metrics[f"{prefix}loss/revkl_coef"] = torch.tensor(self.revkl_coef).cpu()
 
-        metrics[f"{prefix}rewards/chosen"] = chosen_rewards.mean().cpu()
-        metrics[f"{prefix}rewards/rejected"] = rejected_rewards.mean().cpu()
-        metrics[f"{prefix}rewards/accuracies"] = reward_accuracies.mean().cpu()
-        metrics[f"{prefix}rewards/margins"] = (
-            (chosen_rewards - rejected_rewards).mean().cpu()
-        )
+        if revkl_loss is not None:
+            metrics[f"{prefix}loss/revkl"] = revkl_loss.detach().cpu()
+            metrics[f"{prefix}loss/revkl_coef"] = torch.tensor(float(self.revkl_coef)).cpu()
+
+        # 这些 mean 只有在 tensor 非空时才安全；前面 guard 过了
+        metrics[f"{prefix}rewards/chosen"] = chosen_rewards.mean().detach().cpu()
+        metrics[f"{prefix}rewards/rejected"] = rejected_rewards.mean().detach().cpu()
+        metrics[f"{prefix}rewards/accuracies"] = reward_accuracies.mean().detach().cpu()
+        metrics[f"{prefix}rewards/margins"] = (chosen_rewards - rejected_rewards).mean().detach().cpu()
+
         metrics[f"{prefix}logps/rejected"] = policy_rejected_logps.detach().mean().cpu()
         metrics[f"{prefix}logps/chosen"] = policy_chosen_logps.detach().mean().cpu()
-        metrics[f"{prefix}logits/rejected"] = (
-            policy_rejected_logits.detach().mean().cpu()
-        )
+        metrics[f"{prefix}logits/rejected"] = policy_rejected_logits.detach().mean().cpu()
         metrics[f"{prefix}logits/chosen"] = policy_chosen_logits.detach().mean().cpu()
 
+        # return scalar
         return losses.mean(), metrics
+
 
     def compute_loss(
         self,
@@ -1723,6 +1922,8 @@ class GeneralizedDPOTrainer(Trainer):
                             eos_token_id=self.tokenizer.eos_token_id,
                             # Generate two responses for each prompt
                             num_return_sequences=2,
+                             # NaN
+                            remove_invalid_values=True,  
                         )
 
                         # Decode the generated responses

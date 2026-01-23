@@ -386,6 +386,10 @@ def main():
             "pi": script_args.pi,
             "g": script_args.g,
             "gamma": script_args.gamma,
+            # === add these ===
+            "revkl": int(script_args.revkl),
+            "revkl_coef": script_args.revkl_coef if script_args.revkl else 0.0,
+            "revkl_on": script_args.revkl_on if script_args.revkl else "off",
         },
     )
     training_args.hub_model_id = HUGGINGFACE_CONFIGS["prefix"]["models"] + run

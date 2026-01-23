@@ -257,26 +257,58 @@ def evalgpt(pipeline, model, dataset, tag, gres, extra_params):
     call("evalgpt", **script_kwargs)
 
 
+# @click.command()
+# @click.option("-i", "--index", default=None, help="Job index.")
+# def execute(index):
+#     index = "" if index is None else index
+#     commands = generate_sweep_tasks()
+#     with open(
+#         os.path.join(
+#             CACHE_CONFIGS["task_cache_dir"],
+#             f"local{index}.sh",
+#         ),
+#         "w",
+#     ) as f:
+#         f.write("#!/bin/bash\n")
+#         f.write("# source ./venv/bin/activate\n") #注释掉原来的要求激活环境
+#         for command in commands:
+#             f.write(command + "\n")
+#     subprocess.run(
+#         ["bash", os.path.join(CACHE_CONFIGS["task_cache_dir"], f"local{index}.sh")],
+#         check=True,
+#     )
+
+
 @click.command()
 @click.option("-i", "--index", default=None, help="Job index.")
-def execute(index):
-    index = "" if index is None else index
+@click.option("--out", "out_path", default=None, help="Where to write the bash script.")
+@click.option("--no-run", is_flag=True, help="Only generate the script; do not execute.")
+def execute(index, out_path, no_run):
+    index = "" if index is None else str(index)
     commands = generate_sweep_tasks()
-    with open(
-        os.path.join(
-            CACHE_CONFIGS["task_cache_dir"],
-            f"local{index}.sh",
-        ),
-        "w",
-    ) as f:
+
+    default_path = os.path.join(CACHE_CONFIGS["task_cache_dir"], f"local{index}.sh")
+    script_path = out_path if out_path is not None else default_path
+
+    os.makedirs(os.path.dirname(script_path), exist_ok=True)
+
+    with open(script_path, "w") as f:
         f.write("#!/bin/bash\n")
-        f.write("# source ./venv/bin/activate\n") #注释掉原来的要求激活环境
+        f.write("set -euo pipefail\n")
+        f.write("# source ./venv/bin/activate\n")
         for command in commands:
             f.write(command + "\n")
-    subprocess.run(
-        ["bash", os.path.join(CACHE_CONFIGS["task_cache_dir"], f"local{index}.sh")],
-        check=True,
-    )
+
+    # make it executable
+    subprocess.run(["chmod", "+x", script_path], check=True)
+
+    print(f"[cdpo] Script generated: {script_path}")
+    print(f"[cdpo] Num commands: {len(commands)}")
+    if no_run:
+        print("[cdpo] Not executing (---no-run). Review the script then run it manually.")
+        return
+
+    subprocess.run(["bash", script_path], check=True)
 
 
 # Task commands
