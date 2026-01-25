@@ -139,17 +139,52 @@ def load_and_config_model(script_args):
     )
     tokenizer.pad_token = tokenizer.eos_token
 
-    # Assume PEFT is used for DPO training for now
+    def _parse_run(run: str):
+        # e.g. "DPR_L8B_U10_beta0.10g0.30gamma0.30"
+        parts = run.split("_")
+        algo = parts[0]      # DPR / DPO / SFT ...
+        model = parts[1]     # L8B / Q0.5B ...
+        dataset = parts[2]   # U10 ...
+        return algo, model, dataset
+
     if script_args.use_lora:
-        peft_model_id = HUGGINGFACE_CONFIGS["prefix"]["models"] + script_args.run
-        model = PeftModel.from_pretrained(
-            base_model,
-            peft_model_id,
-            revision=script_args.tag,
-            is_trainable=True,
-            adapter_name="default",
-            cache_dir=script_args.model_cache_dir,
-        )
+        algo, model_name, dataset_name = _parse_run(script_args.run)
+
+        # 1) Always load the target adapter (DPR/DPO/SFT itself)
+        target_peft_id = HUGGINGFACE_CONFIGS["prefix"]["models"] + script_args.run
+
+        # 2) If it's DPR/DPO, preload SFT adapter first (same tag) to avoid "DPR-only" instability
+        if algo in ["DPR", "DPO"]:
+            sft_run = f"SFT_{model_name}_{dataset_name}"
+            sft_peft_id = HUGGINGFACE_CONFIGS["prefix"]["models"] + sft_run
+
+            # ---- BASE + SFT ----
+            model = PeftModel.from_pretrained(
+                base_model,
+                sft_peft_id,
+                revision=script_args.tag,
+                is_trainable=False,
+                cache_dir=script_args.model_cache_dir,
+            )
+
+            # ---- (BASE+SFT) + DPR/DPO ----
+            model = PeftModel.from_pretrained(
+                model,
+                target_peft_id,
+                revision=script_args.tag,
+                is_trainable=False,
+                cache_dir=script_args.model_cache_dir,
+            )
+        else:
+            # e.g. SFT-only generation
+            model = PeftModel.from_pretrained(
+                base_model,
+                target_peft_id,
+                revision=script_args.tag,
+                is_trainable=False,
+                cache_dir=script_args.model_cache_dir,
+            )
+
 
     return model, tokenizer
 
