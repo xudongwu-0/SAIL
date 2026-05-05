@@ -290,3 +290,7 @@ cli.add_command(evalgpt)
 # Utility commands
 cli.add_command(clear)
 cli.add_command(prep)
+
+
+if __name__ == "__main__":
+    cli()

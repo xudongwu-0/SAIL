@@ -1381,6 +1381,7 @@ class GeneralizedDPOTrainer(Trainer):
         model: Union[PreTrainedModel, nn.Module],
         inputs: Dict[str, Union[torch.Tensor, Any]],
         return_outputs=False,
+        num_items_in_batch=None,  # transformers >= 4.46 passes this; we ignore it
     ) -> Union[torch.Tensor, Tuple[torch.Tensor, Dict[str, torch.Tensor]]]:
         if not self.use_dpo_data_collator:
             warnings.warn(
@@ -1957,7 +1958,7 @@ class GeneralizedDPOTrainer(Trainer):
 
         return initial_output
 
-    def log(self, logs: Dict[str, float]) -> None:
+    def log(self, logs: Dict[str, float], start_time: Optional[float] = None) -> None:
         """
         Log `logs` on the various objects watching training, including stored metrics.
 
@@ -1971,7 +1972,9 @@ class GeneralizedDPOTrainer(Trainer):
         for key, metrics in self._stored_metrics[train_eval].items():
             logs[key] = torch.tensor(metrics).mean().item()
         del self._stored_metrics[train_eval]
-        return super().log(logs)
+        if start_time is None:
+            return super().log(logs)
+        return super().log(logs, start_time)
 
     @wraps(Trainer.push_to_hub)
     def push_to_hub(

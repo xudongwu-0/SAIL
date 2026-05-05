@@ -233,12 +233,17 @@ def main():
             HUGGINGFACE_CONFIGS["prefix"]["evaluations"] + script_args.run,
             script_args.tag,
         )
-        add_collection_item(
-            collection_slug=HUGGINGFACE_CONFIGS["collections"]["evaluations"],
-            item_id=HUGGINGFACE_CONFIGS["prefix"]["evaluations"] + script_args.run,
-            item_type="dataset",
-            exists_ok=True,
-        )
+        slug = HUGGINGFACE_CONFIGS["collections"]["evaluations"]
+        if slug:
+            try:
+                add_collection_item(
+                    collection_slug=slug,
+                    item_id=HUGGINGFACE_CONFIGS["prefix"]["evaluations"] + script_args.run,
+                    item_type="dataset",
+                    exists_ok=True,
+                )
+            except Exception as e:
+                print(f"[generate] add_collection_item skipped: {e}")
 
 
 if __name__ == "__main__":

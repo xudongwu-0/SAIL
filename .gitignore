@@ -162,3 +162,27 @@ cython_debug/
 # Folders
 cache
 wandb
+
+# --- Online RPL reproduction additions ---
+# Heavy artifacts and run outputs (never commit)
+outputs/
+logs/
+checkpoints/
+data/
+datasets/
+results/
+vibecoding/
+cdpo/backup_*/
+
+# Logs and weights
+*.log
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Local env / secrets
+.env
+configs/services/huggingface.yaml
+configs/services/openai.yaml
+configs/services/wandb.yaml

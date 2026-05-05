@@ -7,7 +7,7 @@ from tqdm.auto import tqdm
 from tqdm.asyncio import tqdm_asyncio
 from huggingface_hub import HfApi
 import tiktoken
-from openai import AsyncAzureOpenAI, RateLimitError
+from openai import AsyncAzureOpenAI, AsyncOpenAI, RateLimitError
 from aiolimiter import AsyncLimiter
 import asyncio
 import numpy as np
@@ -174,10 +174,17 @@ async def evaluate_gpt(response_dataset, script_args):
     )
     endpoints = [
         {
-            "client": AsyncAzureOpenAI(
-                azure_endpoint=client_config["azure_endpoint"],
-                api_key=client_config["api_key"],
-                api_version=client_config["api_version"],
+            "client": (
+                AsyncAzureOpenAI(
+                    azure_endpoint=client_config["azure_endpoint"],
+                    api_key=client_config["api_key"],
+                    api_version=client_config["api_version"],
+                )
+                if "azure_endpoint" in client_config
+                else AsyncOpenAI(
+                    base_url=client_config["base_url"],
+                    api_key=client_config["api_key"],
+                )
             ),
             "model_name": client_config["model_name"],
             "rate_limiter": AsyncLimiter(

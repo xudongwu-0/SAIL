@@ -6,6 +6,8 @@ Qc0.5B: Qwen/Qwen1.5-0.5B-Chat
 Qc1.8B: Qwen/Qwen1.5-1.8B-Chat
 Qc4B: Qwen/Qwen1.5-4B-Chat
 Qc7B: Qwen/Qwen1.5-7B-Chat
+Q3-0.6B: Qwen/Qwen3-0.6B
+Q3-8B: Qwen/Qwen3-8B
 Py70M: EleutherAI/pythia-70m-deduped
 Py160M: EleutherAI/pythia-160m-deduped
 Py410M: EleutherAI/pythia-410m-deduped
